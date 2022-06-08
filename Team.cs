@@ -37,5 +37,10 @@ namespace NBA
             MainMenu openForm = new MainMenu();
             openForm.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
