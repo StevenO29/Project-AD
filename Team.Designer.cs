@@ -37,13 +37,13 @@
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
             this.cBoxSearchTeam = new System.Windows.Forms.ComboBox();
-            this.pictBoxLogo = new System.Windows.Forms.PictureBox();
             this.dgv_east = new System.Windows.Forms.DataGridView();
             this.lbl_teamname = new System.Windows.Forms.Label();
             this.lbl_stadium = new System.Windows.Forms.Label();
+            this.pictBoxLogo = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictBoxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_east)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictBoxLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -73,26 +73,26 @@
             // gameToolStripMenuItem
             // 
             this.gameToolStripMenuItem.Name = "gameToolStripMenuItem";
-            this.gameToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.gameToolStripMenuItem.Size = new System.Drawing.Size(166, 26);
             this.gameToolStripMenuItem.Text = "Game";
             this.gameToolStripMenuItem.Click += new System.EventHandler(this.gameToolStripMenuItem_Click);
             // 
             // playerToolStripMenuItem
             // 
             this.playerToolStripMenuItem.Name = "playerToolStripMenuItem";
-            this.playerToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.playerToolStripMenuItem.Size = new System.Drawing.Size(166, 26);
             this.playerToolStripMenuItem.Text = "Player";
             this.playerToolStripMenuItem.Click += new System.EventHandler(this.playerToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(221, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(163, 6);
             // 
             // mainMenuToolStripMenuItem
             // 
             this.mainMenuToolStripMenuItem.Name = "mainMenuToolStripMenuItem";
-            this.mainMenuToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.mainMenuToolStripMenuItem.Size = new System.Drawing.Size(166, 26);
             this.mainMenuToolStripMenuItem.Text = "Main Menu";
             this.mainMenuToolStripMenuItem.Click += new System.EventHandler(this.mainMenuToolStripMenuItem_Click);
             // 
@@ -104,7 +104,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(470, 50);
+            this.button1.Location = new System.Drawing.Point(451, 50);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(95, 26);
@@ -116,25 +116,16 @@
             // cBoxSearchTeam
             // 
             this.cBoxSearchTeam.FormattingEnabled = true;
-            this.cBoxSearchTeam.Location = new System.Drawing.Point(31, 52);
+            this.cBoxSearchTeam.Location = new System.Drawing.Point(12, 52);
             this.cBoxSearchTeam.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cBoxSearchTeam.Name = "cBoxSearchTeam";
             this.cBoxSearchTeam.Size = new System.Drawing.Size(433, 24);
             this.cBoxSearchTeam.TabIndex = 3;
             // 
-            // pictBoxLogo
-            // 
-            this.pictBoxLogo.Location = new System.Drawing.Point(716, 92);
-            this.pictBoxLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictBoxLogo.Name = "pictBoxLogo";
-            this.pictBoxLogo.Size = new System.Drawing.Size(192, 162);
-            this.pictBoxLogo.TabIndex = 4;
-            this.pictBoxLogo.TabStop = false;
-            // 
             // dgv_east
             // 
             this.dgv_east.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_east.Location = new System.Drawing.Point(31, 92);
+            this.dgv_east.Location = new System.Drawing.Point(12, 92);
             this.dgv_east.Name = "dgv_east";
             this.dgv_east.RowHeadersWidth = 51;
             this.dgv_east.RowTemplate.Height = 24;
@@ -144,20 +135,29 @@
             // lbl_teamname
             // 
             this.lbl_teamname.AutoSize = true;
-            this.lbl_teamname.Location = new System.Drawing.Point(788, 276);
+            this.lbl_teamname.Location = new System.Drawing.Point(775, 276);
             this.lbl_teamname.Name = "lbl_teamname";
-            this.lbl_teamname.Size = new System.Drawing.Size(46, 17);
+            this.lbl_teamname.Size = new System.Drawing.Size(68, 17);
             this.lbl_teamname.TabIndex = 10;
-            this.lbl_teamname.Text = "label1";
+            this.lbl_teamname.Text = "...............";
             // 
             // lbl_stadium
             // 
             this.lbl_stadium.AutoSize = true;
-            this.lbl_stadium.Location = new System.Drawing.Point(788, 329);
+            this.lbl_stadium.Location = new System.Drawing.Point(775, 315);
             this.lbl_stadium.Name = "lbl_stadium";
             this.lbl_stadium.Size = new System.Drawing.Size(59, 17);
             this.lbl_stadium.TabIndex = 11;
             this.lbl_stadium.Text = "Stadium";
+            // 
+            // pictBoxLogo
+            // 
+            this.pictBoxLogo.Location = new System.Drawing.Point(716, 92);
+            this.pictBoxLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictBoxLogo.Name = "pictBoxLogo";
+            this.pictBoxLogo.Size = new System.Drawing.Size(192, 162);
+            this.pictBoxLogo.TabIndex = 4;
+            this.pictBoxLogo.TabStop = false;
             // 
             // Team
             // 
@@ -178,8 +178,8 @@
             this.Text = "Team";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictBoxLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_east)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictBoxLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
