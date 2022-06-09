@@ -165,7 +165,7 @@
             // 
             // btn_detail
             // 
-            this.btn_detail.Location = new System.Drawing.Point(435, 338);
+            this.btn_detail.Location = new System.Drawing.Point(455, 336);
             this.btn_detail.Name = "btn_detail";
             this.btn_detail.Size = new System.Drawing.Size(75, 23);
             this.btn_detail.TabIndex = 8;

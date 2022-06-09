@@ -39,16 +39,11 @@
             this.cBoxSearchTeam = new System.Windows.Forms.ComboBox();
             this.pictBoxLogo = new System.Windows.Forms.PictureBox();
             this.dgv_east = new System.Windows.Forms.DataGridView();
-            this.dgv_teamwest = new System.Windows.Forms.DataGridView();
-            this.btn_stats = new System.Windows.Forms.Button();
-            this.btn_game = new System.Windows.Forms.Button();
-            this.btn_player = new System.Windows.Forms.Button();
             this.lbl_teamname = new System.Windows.Forms.Label();
-            this.btn_stadium = new System.Windows.Forms.Button();
+            this.lbl_stadium = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictBoxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_east)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_teamwest)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -78,26 +73,26 @@
             // gameToolStripMenuItem
             // 
             this.gameToolStripMenuItem.Name = "gameToolStripMenuItem";
-            this.gameToolStripMenuItem.Size = new System.Drawing.Size(166, 26);
+            this.gameToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.gameToolStripMenuItem.Text = "Game";
             this.gameToolStripMenuItem.Click += new System.EventHandler(this.gameToolStripMenuItem_Click);
             // 
             // playerToolStripMenuItem
             // 
             this.playerToolStripMenuItem.Name = "playerToolStripMenuItem";
-            this.playerToolStripMenuItem.Size = new System.Drawing.Size(166, 26);
+            this.playerToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.playerToolStripMenuItem.Text = "Player";
             this.playerToolStripMenuItem.Click += new System.EventHandler(this.playerToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(163, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(221, 6);
             // 
             // mainMenuToolStripMenuItem
             // 
             this.mainMenuToolStripMenuItem.Name = "mainMenuToolStripMenuItem";
-            this.mainMenuToolStripMenuItem.Size = new System.Drawing.Size(166, 26);
+            this.mainMenuToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.mainMenuToolStripMenuItem.Text = "Main Menu";
             this.mainMenuToolStripMenuItem.Click += new System.EventHandler(this.mainMenuToolStripMenuItem_Click);
             // 
@@ -143,75 +138,34 @@
             this.dgv_east.Name = "dgv_east";
             this.dgv_east.RowHeadersWidth = 51;
             this.dgv_east.RowTemplate.Height = 24;
-            this.dgv_east.Size = new System.Drawing.Size(279, 413);
+            this.dgv_east.Size = new System.Drawing.Size(534, 413);
             this.dgv_east.TabIndex = 5;
-            // 
-            // dgv_teamwest
-            // 
-            this.dgv_teamwest.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_teamwest.Location = new System.Drawing.Point(366, 92);
-            this.dgv_teamwest.Name = "dgv_teamwest";
-            this.dgv_teamwest.RowHeadersWidth = 51;
-            this.dgv_teamwest.RowTemplate.Height = 24;
-            this.dgv_teamwest.Size = new System.Drawing.Size(279, 413);
-            this.dgv_teamwest.TabIndex = 6;
-            // 
-            // btn_stats
-            // 
-            this.btn_stats.Location = new System.Drawing.Point(716, 308);
-            this.btn_stats.Name = "btn_stats";
-            this.btn_stats.Size = new System.Drawing.Size(192, 23);
-            this.btn_stats.TabIndex = 7;
-            this.btn_stats.Text = "stats";
-            this.btn_stats.UseVisualStyleBackColor = true;
-            // 
-            // btn_game
-            // 
-            this.btn_game.Location = new System.Drawing.Point(716, 337);
-            this.btn_game.Name = "btn_game";
-            this.btn_game.Size = new System.Drawing.Size(192, 23);
-            this.btn_game.TabIndex = 8;
-            this.btn_game.Text = "game";
-            this.btn_game.UseVisualStyleBackColor = true;
-            // 
-            // btn_player
-            // 
-            this.btn_player.Location = new System.Drawing.Point(716, 367);
-            this.btn_player.Name = "btn_player";
-            this.btn_player.Size = new System.Drawing.Size(192, 23);
-            this.btn_player.TabIndex = 9;
-            this.btn_player.Text = "player";
-            this.btn_player.UseVisualStyleBackColor = true;
             // 
             // lbl_teamname
             // 
             this.lbl_teamname.AutoSize = true;
-            this.lbl_teamname.Location = new System.Drawing.Point(784, 269);
+            this.lbl_teamname.Location = new System.Drawing.Point(788, 276);
             this.lbl_teamname.Name = "lbl_teamname";
             this.lbl_teamname.Size = new System.Drawing.Size(46, 17);
             this.lbl_teamname.TabIndex = 10;
             this.lbl_teamname.Text = "label1";
             // 
-            // btn_stadium
+            // lbl_stadium
             // 
-            this.btn_stadium.Location = new System.Drawing.Point(716, 396);
-            this.btn_stadium.Name = "btn_stadium";
-            this.btn_stadium.Size = new System.Drawing.Size(192, 23);
-            this.btn_stadium.TabIndex = 11;
-            this.btn_stadium.Text = "stadium";
-            this.btn_stadium.UseVisualStyleBackColor = true;
+            this.lbl_stadium.AutoSize = true;
+            this.lbl_stadium.Location = new System.Drawing.Point(788, 329);
+            this.lbl_stadium.Name = "lbl_stadium";
+            this.lbl_stadium.Size = new System.Drawing.Size(59, 17);
+            this.lbl_stadium.TabIndex = 11;
+            this.lbl_stadium.Text = "Stadium";
             // 
             // Team
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1044, 571);
-            this.Controls.Add(this.btn_stadium);
+            this.Controls.Add(this.lbl_stadium);
             this.Controls.Add(this.lbl_teamname);
-            this.Controls.Add(this.btn_player);
-            this.Controls.Add(this.btn_game);
-            this.Controls.Add(this.btn_stats);
-            this.Controls.Add(this.dgv_teamwest);
             this.Controls.Add(this.dgv_east);
             this.Controls.Add(this.pictBoxLogo);
             this.Controls.Add(this.cBoxSearchTeam);
@@ -226,7 +180,6 @@
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictBoxLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_east)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_teamwest)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -245,11 +198,7 @@
         private System.Windows.Forms.ComboBox cBoxSearchTeam;
         private System.Windows.Forms.PictureBox pictBoxLogo;
         private System.Windows.Forms.DataGridView dgv_east;
-        private System.Windows.Forms.DataGridView dgv_teamwest;
-        private System.Windows.Forms.Button btn_stats;
-        private System.Windows.Forms.Button btn_game;
-        private System.Windows.Forms.Button btn_player;
         private System.Windows.Forms.Label lbl_teamname;
-        private System.Windows.Forms.Button btn_stadium;
+        private System.Windows.Forms.Label lbl_stadium;
     }
 }
