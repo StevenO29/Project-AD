@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Boxscore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boxscore.Designer.cs">
+      <DependentUpon>Boxscore.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +85,9 @@
     <Compile Include="Team.Designer.cs">
       <DependentUpon>Team.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Boxscore.resx">
+      <DependentUpon>Boxscore.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
