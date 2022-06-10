@@ -110,6 +110,7 @@
             // dgv_player
             // 
             this.dgv_player.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_player.Enabled = false;
             this.dgv_player.Location = new System.Drawing.Point(14, 75);
             this.dgv_player.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgv_player.Name = "dgv_player";
@@ -121,20 +122,21 @@
             // cBoxPlayerName
             // 
             this.cBoxPlayerName.FormattingEnabled = true;
-            this.cBoxPlayerName.Location = new System.Drawing.Point(90, 39);
+            this.cBoxPlayerName.Location = new System.Drawing.Point(134, 39);
             this.cBoxPlayerName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cBoxPlayerName.Name = "cBoxPlayerName";
             this.cBoxPlayerName.Size = new System.Drawing.Size(623, 28);
             this.cBoxPlayerName.TabIndex = 2;
+            this.cBoxPlayerName.SelectedIndexChanged += new System.EventHandler(this.cBoxPlayerName_SelectedIndexChanged);
             // 
             // lblSearch
             // 
             this.lblSearch.AutoSize = true;
             this.lblSearch.Location = new System.Drawing.Point(12, 42);
             this.lblSearch.Name = "lblSearch";
-            this.lblSearch.Size = new System.Drawing.Size(72, 20);
+            this.lblSearch.Size = new System.Drawing.Size(116, 20);
             this.lblSearch.TabIndex = 3;
-            this.lblSearch.Text = "Search : ";
+            this.lblSearch.Text = "Search Team : ";
             // 
             // Player
             // 
@@ -150,6 +152,7 @@
             this.Name = "Player";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Player";
+            this.Load += new System.EventHandler(this.Player_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_player)).EndInit();
