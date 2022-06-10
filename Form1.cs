@@ -30,5 +30,10 @@ namespace NBA
                 goToMainMenu.ShowDialog();
             }
         }
+
+        private void pictBoxLogo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

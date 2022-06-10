@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace NBA
 {
@@ -16,6 +17,12 @@ namespace NBA
         {
             InitializeComponent();
         }
+
+        public static string sqlConnection = "server = localhost;uid=root;pwd=;database=premier_league";
+        public MySqlConnection sqlConnect = new MySqlConnection(sqlConnection); //Sebagai data koneksi ke DBMS
+        public MySqlCommand sqlCommand; //Sebagai perintah SQL (select, insert, update, delete)
+        public MySqlDataAdapter sqlAdapter; //Sebagai menampung hasil query
+        public string sqlQuery; //Sebagai penampung query SQL
 
         private void teamToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -36,6 +43,28 @@ namespace NBA
             this.Visible = false;
             MainMenu openForm = new MainMenu();
             openForm.ShowDialog();
+        }
+
+        private void btn_detail_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            Boxscore openForm = new Boxscore();
+            openForm.ShowDialog();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
+
+        private void Game_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
