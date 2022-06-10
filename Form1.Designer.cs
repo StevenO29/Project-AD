@@ -45,6 +45,7 @@
             this.pictBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictBoxLogo.TabIndex = 0;
             this.pictBoxLogo.TabStop = false;
+            this.pictBoxLogo.Click += new System.EventHandler(this.pictBoxLogo_Click);
             // 
             // progBarLoadScreen
             // 

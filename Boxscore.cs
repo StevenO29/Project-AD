@@ -16,5 +16,15 @@ namespace NBA
         {
             InitializeComponent();
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
+
+        private void Boxscore_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

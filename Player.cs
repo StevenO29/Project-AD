@@ -37,5 +37,10 @@ namespace NBA
             MainMenu openForm = new MainMenu();
             openForm.ShowDialog();
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
     }
 }
