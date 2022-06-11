@@ -86,7 +86,6 @@ namespace NBA
             lbl_teamaway.Text = dtGame.Rows[Posisi][5].ToString();
             DetailMatch = dtGame.Rows[Posisi][7].ToString();
             label1.Text = dtGame.Rows[Posisi][0].ToString();
-
             pbox_home.Image = (Image)Properties.Resources.ResourceManager.GetObject(Home);
             pbox_home.SizeMode = PictureBoxSizeMode.StretchImage;
             picBoxAway.Image = (Image)Properties.Resources.ResourceManager.GetObject(Away);

@@ -30,8 +30,6 @@ namespace NBA
 
         public string Game_ID = Game.DetailMatch;
 
-
-
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.Exit();
@@ -55,8 +53,15 @@ namespace NBA
             dataDetail.DataSource = dtDetail;
             for (int i = 0; i < dtReferee.Rows.Count; i++)
             {
-                lblRefereeName.Text += dtReferee.Rows[i][0].ToString() + " | ";
+                lblRefereeName.Text += " | " + dtReferee.Rows[i][0].ToString() + " | ";
             }
+        }
+
+        private void backToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            Game openForm = new Game();
+            openForm.ShowDialog();
         }
     }
 }
