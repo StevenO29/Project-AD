@@ -34,9 +34,8 @@
             this.playerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.mainMenuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dTPickerDate = new System.Windows.Forms.DateTimePicker();
             this.lbl_home = new System.Windows.Forms.Label();
             this.pbox_home = new System.Windows.Forms.PictureBox();
             this.lbl_teamhome = new System.Windows.Forms.Label();
@@ -58,11 +57,10 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuToolStripMenuItem,
-            this.editToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1174, 36);
+            this.menuStrip1.Size = new System.Drawing.Size(1174, 33);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -80,34 +78,28 @@
             // teamToolStripMenuItem
             // 
             this.teamToolStripMenuItem.Name = "teamToolStripMenuItem";
-            this.teamToolStripMenuItem.Size = new System.Drawing.Size(203, 34);
+            this.teamToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.teamToolStripMenuItem.Text = "Team";
             this.teamToolStripMenuItem.Click += new System.EventHandler(this.teamToolStripMenuItem_Click);
             // 
             // playerToolStripMenuItem
             // 
             this.playerToolStripMenuItem.Name = "playerToolStripMenuItem";
-            this.playerToolStripMenuItem.Size = new System.Drawing.Size(203, 34);
+            this.playerToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.playerToolStripMenuItem.Text = "Player";
             this.playerToolStripMenuItem.Click += new System.EventHandler(this.playerToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(200, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(267, 6);
             // 
             // mainMenuToolStripMenuItem
             // 
             this.mainMenuToolStripMenuItem.Name = "mainMenuToolStripMenuItem";
-            this.mainMenuToolStripMenuItem.Size = new System.Drawing.Size(203, 34);
+            this.mainMenuToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.mainMenuToolStripMenuItem.Text = "Main Menu";
             this.mainMenuToolStripMenuItem.Click += new System.EventHandler(this.mainMenuToolStripMenuItem_Click);
-            // 
-            // editToolStripMenuItem
-            // 
-            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(58, 29);
-            this.editToolStripMenuItem.Text = "Edit";
             // 
             // exitToolStripMenuItem
             // 
@@ -116,22 +108,25 @@
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
-            // dateTimePicker1
+            // dTPickerDate
             // 
-            this.dateTimePicker1.CustomFormat = "yyyy-MM-dd";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(409, 69);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(337, 26);
-            this.dateTimePicker1.TabIndex = 1;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            this.dTPickerDate.CustomFormat = "yyyy-MM-dd";
+            this.dTPickerDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dTPickerDate.Location = new System.Drawing.Point(409, 69);
+            this.dTPickerDate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dTPickerDate.MaxDate = new System.DateTime(2021, 1, 1, 0, 0, 0, 0);
+            this.dTPickerDate.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
+            this.dTPickerDate.Name = "dTPickerDate";
+            this.dTPickerDate.Size = new System.Drawing.Size(337, 26);
+            this.dTPickerDate.TabIndex = 1;
+            this.dTPickerDate.Value = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
+            this.dTPickerDate.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // lbl_home
             // 
             this.lbl_home.AutoSize = true;
             this.lbl_home.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_home.Location = new System.Drawing.Point(240, 175);
+            this.lbl_home.Location = new System.Drawing.Point(248, 176);
             this.lbl_home.Name = "lbl_home";
             this.lbl_home.Size = new System.Drawing.Size(139, 52);
             this.lbl_home.TabIndex = 2;
@@ -139,7 +134,7 @@
             // 
             // pbox_home
             // 
-            this.pbox_home.Location = new System.Drawing.Point(219, 270);
+            this.pbox_home.Location = new System.Drawing.Point(227, 271);
             this.pbox_home.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pbox_home.Name = "pbox_home";
             this.pbox_home.Size = new System.Drawing.Size(175, 167);
@@ -149,7 +144,7 @@
             // lbl_teamhome
             // 
             this.lbl_teamhome.AutoSize = true;
-            this.lbl_teamhome.Location = new System.Drawing.Point(289, 483);
+            this.lbl_teamhome.Location = new System.Drawing.Point(297, 484);
             this.lbl_teamhome.Name = "lbl_teamhome";
             this.lbl_teamhome.Size = new System.Drawing.Size(41, 20);
             this.lbl_teamhome.TabIndex = 6;
@@ -158,7 +153,7 @@
             // lbl_teamaway
             // 
             this.lbl_teamaway.AutoSize = true;
-            this.lbl_teamaway.Location = new System.Drawing.Point(832, 483);
+            this.lbl_teamaway.Location = new System.Drawing.Point(840, 484);
             this.lbl_teamaway.Name = "lbl_teamaway";
             this.lbl_teamaway.Size = new System.Drawing.Size(41, 20);
             this.lbl_teamaway.TabIndex = 7;
@@ -177,7 +172,7 @@
             // 
             // picBoxAway
             // 
-            this.picBoxAway.Location = new System.Drawing.Point(761, 270);
+            this.picBoxAway.Location = new System.Drawing.Point(769, 271);
             this.picBoxAway.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.picBoxAway.Name = "picBoxAway";
             this.picBoxAway.Size = new System.Drawing.Size(175, 167);
@@ -188,7 +183,7 @@
             // 
             this.lblAway.AutoSize = true;
             this.lblAway.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAway.Location = new System.Drawing.Point(782, 175);
+            this.lblAway.Location = new System.Drawing.Point(790, 176);
             this.lblAway.Name = "lblAway";
             this.lblAway.Size = new System.Drawing.Size(129, 52);
             this.lblAway.TabIndex = 10;
@@ -198,7 +193,7 @@
             // 
             this.lblVS.AutoSize = true;
             this.lblVS.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVS.Location = new System.Drawing.Point(535, 325);
+            this.lblVS.Location = new System.Drawing.Point(543, 326);
             this.lblVS.Name = "lblVS";
             this.lblVS.Size = new System.Drawing.Size(80, 52);
             this.lblVS.TabIndex = 11;
@@ -239,7 +234,7 @@
             this.Controls.Add(this.lbl_teamhome);
             this.Controls.Add(this.pbox_home);
             this.Controls.Add(this.lbl_home);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dTPickerDate);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -262,10 +257,9 @@
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem teamToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem playerToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem mainMenuToolStripMenuItem;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dTPickerDate;
         private System.Windows.Forms.Label lbl_home;
         private System.Windows.Forms.PictureBox pbox_home;
         private System.Windows.Forms.Label lbl_teamhome;
