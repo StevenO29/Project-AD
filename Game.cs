@@ -18,11 +18,22 @@ namespace NBA
             InitializeComponent();
         }
 
-        public static string sqlConnection = "server = localhost;uid=root;pwd=;database=premier_league";
+        public static string sqlConnection = "server = 139.255.11.84;uid=student;pwd=isbmantap;database=DBD_01_NBA";
         public MySqlConnection sqlConnect = new MySqlConnection(sqlConnection); //Sebagai data koneksi ke DBMS
         public MySqlCommand sqlCommand; //Sebagai perintah SQL (select, insert, update, delete)
         public MySqlDataAdapter sqlAdapter; //Sebagai menampung hasil query
         public string sqlQuery; //Sebagai penampung query SQL
+
+        DataTable dtGame = new DataTable();
+
+        public static string DetailMatch;
+        int PosisiSekarang = 0;
+        string Home;
+        string Away;
+        string date;
+        string datepick;
+        int checkdate = 0;
+        int getindex;
 
         private void teamToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -59,12 +70,84 @@ namespace NBA
 
         private void Game_Load(object sender, EventArgs e)
         {
+            sqlQuery = "select date_format(g.game_date, '%Y-%m-%d'), g.HOMETEAM_ID, t1.Team_Name, g.HOME_SCORE,g.AWAYTEAM_ID, t2.Team_Name, g.AWAY_SCORE, g.GAME_ID from game g left join team t1 on t1.team_id = g.hometeam_id left join team t2 on t2.team_id = g.awayteam_id;";
+            sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+            sqlAdapter = new MySqlDataAdapter(sqlCommand);
+            sqlAdapter.Fill(dtGame);
+            load(0);
+        }
+
+        private void load(int Posisi)
+        {
+            dateGame.Value = Convert.ToDateTime(dtGame.Rows[Posisi][0].ToString());
+            Home = dtGame.Rows[Posisi][1].ToString();
+            Away = dtGame.Rows[Posisi][4].ToString();
+            lbl_teamhome.Text = dtGame.Rows[Posisi][2].ToString();
+            lbl_teamaway.Text = dtGame.Rows[Posisi][5].ToString();
+            DetailMatch = dtGame.Rows[Posisi][7].ToString();
+            label1.Text = dtGame.Rows[Posisi][0].ToString();
+
+            pbox_home.Image = (Image)Properties.Resources.ResourceManager.GetObject(Home);
+            pbox_home.SizeMode = PictureBoxSizeMode.StretchImage;
+            picBoxAway.Image = (Image)Properties.Resources.ResourceManager.GetObject(Away);
+            picBoxAway.SizeMode = PictureBoxSizeMode.StretchImage;
+
+            PosisiSekarang = Posisi;
+        }
+
+        private void pbox_home_Click(object sender, EventArgs e)
+        {
 
         }
 
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        private void picBoxAway_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnPrev_Click(object sender, EventArgs e)
+        {
+            if (PosisiSekarang > 0)
+            {
+                PosisiSekarang--;
+                load(PosisiSekarang);
+            }
+            else
+                MessageBox.Show("Data Sudah Data Pertama");
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            if (PosisiSekarang < dtGame.Rows.Count - 1)
+            {
+                PosisiSekarang++;
+                load(PosisiSekarang);
+            }
+            else
+                MessageBox.Show("Data Sudah Data Terakhir");
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            checkdate = 0;
+            datepick = dateGame.Value.ToString();
+            for (int i = 0; i < dtGame.Rows.Count; i++)
+            {
+                if (dateGame.Value.ToString("yyyy-MM-dd") == dtGame.Rows[i][0].ToString())
+                {
+                    date = dtGame.Rows[i][0].ToString();
+                    checkdate = 1;
+                    getindex = i;
+                    break;
+                }
+            }
+            if (checkdate == 1)
+            {
+                PosisiSekarang = getindex;
+                load(PosisiSekarang);
+            }
+            else
+                MessageBox.Show("Tidak ada game pada tanggal yang dipilih");
         }
     }
 }

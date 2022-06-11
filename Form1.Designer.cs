@@ -39,21 +39,22 @@
             // pictBoxLogo
             // 
             this.pictBoxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pictBoxLogo.Image")));
-            this.pictBoxLogo.Location = new System.Drawing.Point(-9, -3);
+            this.pictBoxLogo.Location = new System.Drawing.Point(-6, -2);
+            this.pictBoxLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictBoxLogo.Name = "pictBoxLogo";
-            this.pictBoxLogo.Size = new System.Drawing.Size(1186, 700);
+            this.pictBoxLogo.Size = new System.Drawing.Size(791, 455);
             this.pictBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictBoxLogo.TabIndex = 0;
             this.pictBoxLogo.TabStop = false;
-            this.pictBoxLogo.Click += new System.EventHandler(this.pictBoxLogo_Click);
             // 
             // progBarLoadScreen
             // 
-            this.progBarLoadScreen.Location = new System.Drawing.Point(0, 696);
+            this.progBarLoadScreen.Location = new System.Drawing.Point(0, 452);
+            this.progBarLoadScreen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.progBarLoadScreen.MarqueeAnimationSpeed = 30;
             this.progBarLoadScreen.Maximum = 30;
             this.progBarLoadScreen.Name = "progBarLoadScreen";
-            this.progBarLoadScreen.Size = new System.Drawing.Size(1177, 44);
+            this.progBarLoadScreen.Size = new System.Drawing.Size(785, 29);
             this.progBarLoadScreen.TabIndex = 1;
             // 
             // timerLoad
@@ -63,11 +64,12 @@
             // 
             // LoadingPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1174, 740);
+            this.ClientSize = new System.Drawing.Size(783, 481);
             this.Controls.Add(this.progBarLoadScreen);
             this.Controls.Add(this.pictBoxLogo);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "LoadingPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NBA\'s Data";

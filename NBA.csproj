@@ -147,5 +147,95 @@
   <ItemGroup>
     <None Include="Resources\Exit %281%29 %282%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ATL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BKN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BOS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CHA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CHI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CLE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DAL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DEN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DET.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GSW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HOU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IND.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LAC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LAL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MEM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MIA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MIL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MIN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NOP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NYK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OKC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ORL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PHI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PHX.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\POR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SAC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SAS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UTA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WAS.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
