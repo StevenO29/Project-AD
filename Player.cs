@@ -56,7 +56,7 @@ namespace NBA
         private void cBoxPlayerName_SelectedIndexChanged(object sender, EventArgs e)
         {
             player.Clear();
-            sqlQuery = "select p.PLAYER_ID as `Player ID`, upper(p.TEAM_ID) as `Team ID`, p.PLAYER_NAME as `Player Name`, p.POS as `POS`, p.AGE as `AGE`, p.GP as `GP`, p.MPG as `MPG`, p.FTA as `FTA`, p.FTP as `FTP`, p.`2PA` as `2PA`, p.`2PP` as `2PP`, p.`3PA` as `3PA`, p.`3PP` as `3PP`, p.PPG as `PPG`, p.RPG as `RPG`, p.APG as `APG`, p.SPG as `SPG`, p.BPG as `BPG`, p.TOPG as `TOPG` from player p, team t where upper(p.TEAM_ID) = '" + cBoxPlayerName.SelectedValue.ToString() + "' group by 1";
+            sqlQuery = "select p.PLAYER_ID as `Player ID`, upper(p.TEAM_ID) as `Team ID`, p.PLAYER_NAME as `Player Name`, p.POS as `POS`, p.AGE as `AGE`, p.GP as `GP`, p.MPG as `MPG`, p.FTA as `FTA`, p.FTP as `FTP`, p.`2PA` as `2PA`, p.`2PP` as `2PP`, p.`3PA` as `3PA`, p.`3PP` as `3PP`, p.PPG as `PPG`, p.RPG as `RPG`, p.APG as `APG`, p.SPG as `SPG`, p.BPG as `BPG`, p.TOPG as `TOPG` from player p, team t where upper(p.TEAM_ID) = '" + cBoxPlayerName.SelectedValue.ToString() + "' group by 1 order by 3";
             sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
             sqlAdapter = new MySqlDataAdapter(sqlCommand);
             sqlAdapter.Fill(player);
@@ -72,11 +72,18 @@ namespace NBA
             cBoxPlayerName.DataSource = teamName;
             cBoxPlayerName.DisplayMember = "Team_Name";
             cBoxPlayerName.ValueMember = "Team_id";
-            sqlQuery = "select p.PLAYER_ID as `Player ID`, upper(p.TEAM_ID) as `Team ID`, p.PLAYER_NAME as `Player Name`, p.POS as `POS`, p.AGE as `AGE`, p.GP as `GP`, p.MPG as `MPG`, p.FTA as `FTA`, p.FTP as `FTP`, p.`2PA` as `2PA`, p.`2PP` as `2PP`, p.`3PA` as `3PA`, p.`3PP` as `3PP`, p.PPG as `PPG`, p.RPG as `RPG`, p.APG as `APG`, p.SPG as `SPG`, p.BPG as `BPG`, p.TOPG as `TOPG` from player p, team t where upper(p.TEAM_ID) = '" + cBoxPlayerName.SelectedValue.ToString() + "' group by 1";
+            sqlQuery = "select p.PLAYER_ID as `Player ID`, upper(p.TEAM_ID) as `Team ID`, p.PLAYER_NAME as `Player Name`, p.POS as `POS`, p.AGE as `AGE`, p.GP as `GP`, p.MPG as `MPG`, p.FTA as `FTA`, p.FTP as `FTP`, p.`2PA` as `2PA`, p.`2PP` as `2PP`, p.`3PA` as `3PA`, p.`3PP` as `3PP`, p.PPG as `PPG`, p.RPG as `RPG`, p.APG as `APG`, p.SPG as `SPG`, p.BPG as `BPG`, p.TOPG as `TOPG` from player p, team t where upper(p.TEAM_ID) = '" + cBoxPlayerName.SelectedValue.ToString() + "' group by 1 order by 3";
             sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
             sqlAdapter = new MySqlDataAdapter(sqlCommand);
             sqlAdapter.Fill(player);
             dgv_player.DataSource = player;
+        }
+
+        private void addToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            AddPlayer openForm = new AddPlayer();
+            openForm.ShowDialog();
         }
     }
 }
