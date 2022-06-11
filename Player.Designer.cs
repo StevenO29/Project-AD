@@ -34,7 +34,7 @@
             this.teamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.mainMenuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.edtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dgv_player = new System.Windows.Forms.DataGridView();
             this.cBoxPlayerName = new System.Windows.Forms.ComboBox();
@@ -49,7 +49,7 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuToolStripMenuItem,
-            this.edtToolStripMenuItem,
+            this.addToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -94,11 +94,12 @@
             this.mainMenuToolStripMenuItem.Text = "Main Menu";
             this.mainMenuToolStripMenuItem.Click += new System.EventHandler(this.mainMenuToolStripMenuItem_Click);
             // 
-            // edtToolStripMenuItem
+            // addToolStripMenuItem
             // 
-            this.edtToolStripMenuItem.Name = "edtToolStripMenuItem";
-            this.edtToolStripMenuItem.Size = new System.Drawing.Size(58, 29);
-            this.edtToolStripMenuItem.Text = "Edit";
+            this.addToolStripMenuItem.Name = "addToolStripMenuItem";
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(114, 29);
+            this.addToolStripMenuItem.Text = "Add Player";
+            this.addToolStripMenuItem.Click += new System.EventHandler(this.addToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
@@ -113,6 +114,7 @@
             this.dgv_player.Location = new System.Drawing.Point(14, 75);
             this.dgv_player.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgv_player.Name = "dgv_player";
+            this.dgv_player.ReadOnly = true;
             this.dgv_player.RowHeadersWidth = 51;
             this.dgv_player.RowTemplate.Height = 24;
             this.dgv_player.Size = new System.Drawing.Size(1148, 624);
@@ -121,20 +123,21 @@
             // cBoxPlayerName
             // 
             this.cBoxPlayerName.FormattingEnabled = true;
-            this.cBoxPlayerName.Location = new System.Drawing.Point(90, 39);
+            this.cBoxPlayerName.Location = new System.Drawing.Point(134, 39);
             this.cBoxPlayerName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cBoxPlayerName.Name = "cBoxPlayerName";
             this.cBoxPlayerName.Size = new System.Drawing.Size(623, 28);
             this.cBoxPlayerName.TabIndex = 2;
+            this.cBoxPlayerName.SelectedIndexChanged += new System.EventHandler(this.cBoxPlayerName_SelectedIndexChanged);
             // 
             // lblSearch
             // 
             this.lblSearch.AutoSize = true;
             this.lblSearch.Location = new System.Drawing.Point(12, 42);
             this.lblSearch.Name = "lblSearch";
-            this.lblSearch.Size = new System.Drawing.Size(72, 20);
+            this.lblSearch.Size = new System.Drawing.Size(116, 20);
             this.lblSearch.TabIndex = 3;
-            this.lblSearch.Text = "Search : ";
+            this.lblSearch.Text = "Search Team : ";
             // 
             // Player
             // 
@@ -150,6 +153,7 @@
             this.Name = "Player";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Player";
+            this.Load += new System.EventHandler(this.Player_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_player)).EndInit();
@@ -166,7 +170,7 @@
         private System.Windows.Forms.ToolStripMenuItem teamToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem mainMenuToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem edtToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem;
         private System.Windows.Forms.DataGridView dgv_player;
         private System.Windows.Forms.ComboBox cBoxPlayerName;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;

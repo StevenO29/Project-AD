@@ -53,6 +53,12 @@
     <Compile Include="Boxscore.Designer.cs">
       <DependentUpon>Boxscore.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditPlayer.Designer.cs">
+      <DependentUpon>EditPlayer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,9 @@
     </Compile>
     <EmbeddedResource Include="Boxscore.resx">
       <DependentUpon>Boxscore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPlayer.resx">
+      <DependentUpon>EditPlayer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

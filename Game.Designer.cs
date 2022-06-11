@@ -34,7 +34,6 @@
             this.playerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.mainMenuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dateGame = new System.Windows.Forms.DateTimePicker();
             this.lbl_home = new System.Windows.Forms.Label();
@@ -60,7 +59,6 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuToolStripMenuItem,
-            this.editToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -147,6 +145,8 @@
             this.lbl_teamhome.AutoSize = true;
             this.lbl_teamhome.Location = new System.Drawing.Point(163, 314);
             this.lbl_teamhome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_teamhome.Location = new System.Drawing.Point(163, 314);
+            this.lbl_teamhome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_teamhome.Name = "lbl_teamhome";
             this.lbl_teamhome.Size = new System.Drawing.Size(31, 13);
             this.lbl_teamhome.TabIndex = 6;
@@ -157,6 +157,8 @@
             // 
             this.lbl_teamaway.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_teamaway.AutoSize = true;
+            this.lbl_teamaway.Location = new System.Drawing.Point(515, 314);
+            this.lbl_teamaway.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_teamaway.Location = new System.Drawing.Point(515, 314);
             this.lbl_teamaway.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_teamaway.Name = "lbl_teamaway";
@@ -311,7 +313,6 @@
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem teamToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem playerToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem mainMenuToolStripMenuItem;
         private System.Windows.Forms.DateTimePicker dateGame;
