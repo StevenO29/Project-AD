@@ -143,6 +143,7 @@ namespace NBA
 
             lblStadium.Left = 474;
             lblStadium.Top = 320;
+            dtstadium.Clear();
             sqlQuery = " select s.stadium_name as 'Stadium Name', s.city as City, s.capacity as Capacity from stadium s where s.team_id = '"+ cBoxSearchTeam.SelectedValue.ToString()+"';";
             sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
             sqlAdapter = new MySqlDataAdapter(sqlCommand);

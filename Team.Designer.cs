@@ -122,14 +122,14 @@
             // playerToolStripMenuItem1
             // 
             this.playerToolStripMenuItem1.Name = "playerToolStripMenuItem1";
-            this.playerToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.playerToolStripMenuItem1.Size = new System.Drawing.Size(106, 22);
             this.playerToolStripMenuItem1.Text = "Player";
             this.playerToolStripMenuItem1.Click += new System.EventHandler(this.playerToolStripMenuItem1_Click);
             // 
             // teamToolStripMenuItem
             // 
             this.teamToolStripMenuItem.Name = "teamToolStripMenuItem";
-            this.teamToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.teamToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
             this.teamToolStripMenuItem.Text = "Team";
             this.teamToolStripMenuItem.Click += new System.EventHandler(this.teamToolStripMenuItem_Click);
             // 
@@ -151,6 +151,7 @@
             // 
             // dgvTeam
             // 
+            this.dgvTeam.AllowUserToAddRows = false;
             this.dgvTeam.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTeam.Location = new System.Drawing.Point(13, 61);
             this.dgvTeam.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -186,6 +187,7 @@
             // 
             // dgvStadium
             // 
+            this.dgvStadium.AllowUserToAddRows = false;
             this.dgvStadium.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStadium.Location = new System.Drawing.Point(13, 341);
             this.dgvStadium.Margin = new System.Windows.Forms.Padding(2);
@@ -219,6 +221,7 @@
             // 
             // dgvPlayer
             // 
+            this.dgvPlayer.AllowUserToAddRows = false;
             this.dgvPlayer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPlayer.Location = new System.Drawing.Point(13, 61);
             this.dgvPlayer.Name = "dgvPlayer";

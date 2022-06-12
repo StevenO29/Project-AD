@@ -49,7 +49,9 @@
             this.cbTeamU = new System.Windows.Forms.ComboBox();
             this.cbPosU = new System.Windows.Forms.ComboBox();
             this.lbAva = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnDel = new System.Windows.Forms.Button();
+            this.chbAllData = new System.Windows.Forms.CheckBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.gbSelect.SuspendLayout();
@@ -81,7 +83,7 @@
             this.cbTeamS.FormattingEnabled = true;
             this.cbTeamS.Location = new System.Drawing.Point(145, 32);
             this.cbTeamS.Name = "cbTeamS";
-            this.cbTeamS.Size = new System.Drawing.Size(255, 33);
+            this.cbTeamS.Size = new System.Drawing.Size(378, 33);
             this.cbTeamS.TabIndex = 1;
             this.cbTeamS.SelectedIndexChanged += new System.EventHandler(this.cbTeamS_SelectedIndexChanged);
             // 
@@ -114,6 +116,7 @@
             this.cbPlayerS.Name = "cbPlayerS";
             this.cbPlayerS.Size = new System.Drawing.Size(255, 33);
             this.cbPlayerS.TabIndex = 4;
+            this.cbPlayerS.SelectedIndexChanged += new System.EventHandler(this.cbPlayerS_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -142,6 +145,8 @@
             // 
             // gbUpdate
             // 
+            this.gbUpdate.Controls.Add(this.btnDel);
+            this.gbUpdate.Controls.Add(this.btnUpdate);
             this.gbUpdate.Controls.Add(this.lbAva);
             this.gbUpdate.Controls.Add(this.cbPosU);
             this.gbUpdate.Controls.Add(this.cbTeamU);
@@ -215,6 +220,7 @@
             this.tbID.Name = "tbID";
             this.tbID.Size = new System.Drawing.Size(150, 31);
             this.tbID.TabIndex = 4;
+            this.tbID.TextChanged += new System.EventHandler(this.tbID_TextChanged);
             // 
             // tbNameU
             // 
@@ -253,21 +259,44 @@
             this.lbAva.Text = "......";
             this.lbAva.Visible = false;
             // 
-            // label6
+            // btnUpdate
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(648, 81);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "label6";
+            this.btnUpdate.Location = new System.Drawing.Point(448, 204);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.TabIndex = 7;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // btnDel
+            // 
+            this.btnDel.Location = new System.Drawing.Point(529, 204);
+            this.btnDel.Name = "btnDel";
+            this.btnDel.Size = new System.Drawing.Size(75, 23);
+            this.btnDel.TabIndex = 10;
+            this.btnDel.Text = "Delete";
+            this.btnDel.UseVisualStyleBackColor = true;
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
+            // 
+            // chbAllData
+            // 
+            this.chbAllData.AutoSize = true;
+            this.chbAllData.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chbAllData.Location = new System.Drawing.Point(626, 108);
+            this.chbAllData.Name = "chbAllData";
+            this.chbAllData.Size = new System.Drawing.Size(106, 29);
+            this.chbAllData.TabIndex = 9;
+            this.chbAllData.Text = "All Data";
+            this.chbAllData.UseVisualStyleBackColor = true;
+            this.chbAllData.CheckedChanged += new System.EventHandler(this.chbAllData_CheckedChanged);
             // 
             // UpdatePlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(799, 503);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.chbAllData);
             this.Controls.Add(this.gbUpdate);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
@@ -275,6 +304,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "UpdatePlayer";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UpdatePlayer";
             this.Load += new System.EventHandler(this.UpdatePlayer_Load);
             this.menuStrip1.ResumeLayout(false);
@@ -311,6 +341,8 @@
         private System.Windows.Forms.ComboBox cbPosU;
         private System.Windows.Forms.ComboBox cbTeamU;
         private System.Windows.Forms.TextBox tbNameU;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnDel;
+        private System.Windows.Forms.CheckBox chbAllData;
     }
 }

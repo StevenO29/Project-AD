@@ -93,6 +93,7 @@ namespace NBA
         {
             lblAva.Visible = true;
             
+
             bool exist = dtCekID.Select().ToList().Exists(row => row["team_id"].ToString().ToUpper() == tbTeamID.Text.ToUpper());
             if ((exist && tbTeamID.Text != teamid) || tbTeamID.TextLength != 3)
             {
