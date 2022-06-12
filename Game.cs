@@ -70,7 +70,7 @@ namespace NBA
 
         private void Game_Load(object sender, EventArgs e)
         {
-            sqlQuery = "select date_format(g.game_date, '%Y-%m-%d'), g.HOMETEAM_ID, t1.Team_Name, g.HOME_SCORE,g.AWAYTEAM_ID, t2.Team_Name, g.AWAY_SCORE, g.GAME_ID from game g left join team t1 on t1.team_id = g.hometeam_id left join team t2 on t2.team_id = g.awayteam_id;";
+            sqlQuery = "select date_format(g.game_date, '%Y-%m-%d'), g.HOMETEAM_ID, t1.Team_Name, g.HOME_SCORE,g.AWAYTEAM_ID, t2.Team_Name, g.AWAY_SCORE, g.GAME_ID, s.stadium_name from game g left join team t1 on t1.team_id = g.hometeam_id left join team t2 on t2.team_id = g.awayteam_id left join stadium s on t1.Stadium_id = s.STADIUM_ID where g.status_del = 0;";
             sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
             sqlAdapter = new MySqlDataAdapter(sqlCommand);
             sqlAdapter.Fill(dtGame);
@@ -84,8 +84,8 @@ namespace NBA
             Away = dtGame.Rows[Posisi][4].ToString();
             lbl_teamhome.Text = dtGame.Rows[Posisi][2].ToString();
             lbl_teamaway.Text = dtGame.Rows[Posisi][5].ToString();
+            lbStad.Text = $"Stadium :\n{ dtGame.Rows[Posisi][8].ToString()}";
             DetailMatch = dtGame.Rows[Posisi][7].ToString();
-            label1.Text = dtGame.Rows[Posisi][0].ToString();
             pbox_home.Image = (Image)Properties.Resources.ResourceManager.GetObject(Home);
             pbox_home.SizeMode = PictureBoxSizeMode.StretchImage;
             picBoxAway.Image = (Image)Properties.Resources.ResourceManager.GetObject(Away);
