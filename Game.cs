@@ -70,11 +70,18 @@ namespace NBA
 
         private void Game_Load(object sender, EventArgs e)
         {
-            sqlQuery = "select date_format(g.game_date, '%Y-%m-%d'), g.HOMETEAM_ID, t1.Team_Name, g.HOME_SCORE,g.AWAYTEAM_ID, t2.Team_Name, g.AWAY_SCORE, g.GAME_ID, s.stadium_name from game g left join team t1 on t1.team_id = g.hometeam_id left join team t2 on t2.team_id = g.awayteam_id left join stadium s on t1.Stadium_id = s.STADIUM_ID where g.status_del = 0;";
-            sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
-            sqlAdapter = new MySqlDataAdapter(sqlCommand);
-            sqlAdapter.Fill(dtGame);
-            load(0);
+            try
+            {
+                sqlQuery = "select date_format(g.game_date, '%Y-%m-%d'), g.HOMETEAM_ID, t1.Team_Name, g.HOME_SCORE,g.AWAYTEAM_ID, t2.Team_Name, g.AWAY_SCORE, g.GAME_ID, s.stadium_name from game g left join team t1 on t1.team_id = g.hometeam_id left join team t2 on t2.team_id = g.awayteam_id left join stadium s on t1.Stadium_id = s.STADIUM_ID where g.status_del = 0;";
+                sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+                sqlAdapter = new MySqlDataAdapter(sqlCommand);
+                sqlAdapter.Fill(dtGame);
+                load(0);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void load(int Posisi)
@@ -90,20 +97,9 @@ namespace NBA
             pbox_home.SizeMode = PictureBoxSizeMode.StretchImage;
             picBoxAway.Image = (Image)Properties.Resources.ResourceManager.GetObject(Away);
             picBoxAway.SizeMode = PictureBoxSizeMode.StretchImage;
-
             PosisiSekarang = Posisi;
         }
-
-        private void pbox_home_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void picBoxAway_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void btnPrev_Click(object sender, EventArgs e)
         {
             if (PosisiSekarang > 0)
@@ -117,36 +113,50 @@ namespace NBA
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            if (PosisiSekarang < dtGame.Rows.Count - 1)
+            try
             {
-                PosisiSekarang++;
-                load(PosisiSekarang);
+                if (PosisiSekarang < dtGame.Rows.Count - 1)
+                {
+                    PosisiSekarang++;
+                    load(PosisiSekarang);
+                }
+                else
+                    MessageBox.Show("Data Sudah Data Terakhir");
             }
-            else
-                MessageBox.Show("Data Sudah Data Terakhir");
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            checkdate = 0;
-            datepick = dateGame.Value.ToString();
-            for (int i = 0; i < dtGame.Rows.Count; i++)
+            try
             {
-                if (dateGame.Value.ToString("yyyy-MM-dd") == dtGame.Rows[i][0].ToString())
+                checkdate = 0;
+                datepick = dateGame.Value.ToString();
+                for (int i = 0; i < dtGame.Rows.Count; i++)
                 {
-                    date = dtGame.Rows[i][0].ToString();
-                    checkdate = 1;
-                    getindex = i;
-                    break;
+                    if (dateGame.Value.ToString("yyyy-MM-dd") == dtGame.Rows[i][0].ToString())
+                    {
+                        date = dtGame.Rows[i][0].ToString();
+                        checkdate = 1;
+                        getindex = i;
+                        break;
+                    }
                 }
+                if (checkdate == 1)
+                {
+                    PosisiSekarang = getindex;
+                    load(PosisiSekarang);
+                }
+                else
+                    MessageBox.Show("Tidak ada game pada tanggal yang dipilih");
             }
-            if (checkdate == 1)
+            catch (Exception ex)
             {
-                PosisiSekarang = getindex;
-                load(PosisiSekarang);
+                MessageBox.Show(ex.Message);
             }
-            else
-                MessageBox.Show("Tidak ada game pada tanggal yang dipilih");
         }
     }
 }

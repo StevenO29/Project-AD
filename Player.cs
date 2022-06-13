@@ -79,10 +79,17 @@ namespace NBA
             dgv_player.DataSource = player;
         }
 
-        private void addToolStripMenuItem_Click(object sender, EventArgs e)
+        private void addPlayerToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Visible = false;
             AddPlayer openForm = new AddPlayer();
+            openForm.ShowDialog();
+        }
+
+        private void updateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            UpdatePlayer openForm = new UpdatePlayer();
             openForm.ShowDialog();
         }
     }

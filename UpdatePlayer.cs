@@ -37,10 +37,9 @@ namespace NBA
 
         private void backToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Team OpenWindow = new Team();
-            OpenWindow.ShowDialog();
-            this.Close();
+            this.Visible = false;
+            Player openForm = new Player();
+            openForm.ShowDialog();
         }
 
         private void UpdatePlayer_Load(object sender, EventArgs e)

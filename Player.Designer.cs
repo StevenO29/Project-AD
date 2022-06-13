@@ -39,6 +39,8 @@
             this.dgv_player = new System.Windows.Forms.DataGridView();
             this.cBoxPlayerName = new System.Windows.Forms.ComboBox();
             this.lblSearch = new System.Windows.Forms.Label();
+            this.addPlayerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.updateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_player)).BeginInit();
             this.SuspendLayout();
@@ -96,10 +98,12 @@
             // 
             // addToolStripMenuItem
             // 
+            this.addToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addPlayerToolStripMenuItem,
+            this.updateToolStripMenuItem});
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-            this.addToolStripMenuItem.Size = new System.Drawing.Size(114, 29);
-            this.addToolStripMenuItem.Text = "Add Player";
-            this.addToolStripMenuItem.Click += new System.EventHandler(this.addToolStripMenuItem_Click);
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(58, 29);
+            this.addToolStripMenuItem.Text = "Edit";
             // 
             // exitToolStripMenuItem
             // 
@@ -139,6 +143,20 @@
             this.lblSearch.TabIndex = 3;
             this.lblSearch.Text = "Search Team : ";
             // 
+            // addPlayerToolStripMenuItem
+            // 
+            this.addPlayerToolStripMenuItem.Name = "addPlayerToolStripMenuItem";
+            this.addPlayerToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.addPlayerToolStripMenuItem.Text = "Add";
+            this.addPlayerToolStripMenuItem.Click += new System.EventHandler(this.addPlayerToolStripMenuItem_Click);
+            // 
+            // updateToolStripMenuItem
+            // 
+            this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
+            this.updateToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.updateToolStripMenuItem.Text = "Update";
+            this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
+            // 
             // Player
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -175,5 +193,7 @@
         private System.Windows.Forms.ComboBox cBoxPlayerName;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.Label lblSearch;
+        private System.Windows.Forms.ToolStripMenuItem addPlayerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem updateToolStripMenuItem;
     }
 }

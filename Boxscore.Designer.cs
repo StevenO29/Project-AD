@@ -44,6 +44,7 @@
             this.dataDetail.Location = new System.Drawing.Point(34, 112);
             this.dataDetail.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.dataDetail.Name = "dataDetail";
+            this.dataDetail.ReadOnly = true;
             this.dataDetail.RowHeadersWidth = 51;
             this.dataDetail.RowTemplate.Height = 24;
             this.dataDetail.Size = new System.Drawing.Size(1100, 588);

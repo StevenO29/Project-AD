@@ -120,6 +120,7 @@
             // txtBoxPlayerID
             // 
             this.txtBoxPlayerID.Location = new System.Drawing.Point(358, 99);
+            this.txtBoxPlayerID.MaxLength = 9;
             this.txtBoxPlayerID.Name = "txtBoxPlayerID";
             this.txtBoxPlayerID.Size = new System.Drawing.Size(226, 26);
             this.txtBoxPlayerID.TabIndex = 6;
@@ -127,6 +128,7 @@
             // txtBoxTeamID
             // 
             this.txtBoxTeamID.Location = new System.Drawing.Point(358, 191);
+            this.txtBoxTeamID.MaxLength = 3;
             this.txtBoxTeamID.Name = "txtBoxTeamID";
             this.txtBoxTeamID.Size = new System.Drawing.Size(226, 26);
             this.txtBoxTeamID.TabIndex = 7;
@@ -141,6 +143,7 @@
             // txtBoxPOS
             // 
             this.txtBoxPOS.Location = new System.Drawing.Point(358, 367);
+            this.txtBoxPOS.MaxLength = 3;
             this.txtBoxPOS.Name = "txtBoxPOS";
             this.txtBoxPOS.Size = new System.Drawing.Size(120, 26);
             this.txtBoxPOS.TabIndex = 9;

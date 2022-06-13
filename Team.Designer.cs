@@ -35,7 +35,6 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.mainMenuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.playerToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.teamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cBoxSearchTeam = new System.Windows.Forms.ComboBox();
@@ -61,6 +60,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuToolStripMenuItem,
@@ -68,8 +68,8 @@
             this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(783, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1174, 33);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -81,94 +81,85 @@
             this.toolStripSeparator1,
             this.mainMenuToolStripMenuItem});
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 22);
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(73, 29);
             this.menuToolStripMenuItem.Text = "Menu";
             // 
             // gameToolStripMenuItem
             // 
             this.gameToolStripMenuItem.Name = "gameToolStripMenuItem";
-            this.gameToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.gameToolStripMenuItem.Size = new System.Drawing.Size(203, 34);
             this.gameToolStripMenuItem.Text = "Game";
             this.gameToolStripMenuItem.Click += new System.EventHandler(this.gameToolStripMenuItem_Click);
             // 
             // playerToolStripMenuItem
             // 
             this.playerToolStripMenuItem.Name = "playerToolStripMenuItem";
-            this.playerToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.playerToolStripMenuItem.Size = new System.Drawing.Size(203, 34);
             this.playerToolStripMenuItem.Text = "Player";
             this.playerToolStripMenuItem.Click += new System.EventHandler(this.playerToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(132, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(200, 6);
             // 
             // mainMenuToolStripMenuItem
             // 
             this.mainMenuToolStripMenuItem.Name = "mainMenuToolStripMenuItem";
-            this.mainMenuToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.mainMenuToolStripMenuItem.Size = new System.Drawing.Size(203, 34);
             this.mainMenuToolStripMenuItem.Text = "Main Menu";
             this.mainMenuToolStripMenuItem.Click += new System.EventHandler(this.mainMenuToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.playerToolStripMenuItem1,
             this.teamToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 22);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(58, 29);
             this.editToolStripMenuItem.Text = "Edit";
-            // 
-            // playerToolStripMenuItem1
-            // 
-            this.playerToolStripMenuItem1.Name = "playerToolStripMenuItem1";
-            this.playerToolStripMenuItem1.Size = new System.Drawing.Size(106, 22);
-            this.playerToolStripMenuItem1.Text = "Player";
-            this.playerToolStripMenuItem1.Click += new System.EventHandler(this.playerToolStripMenuItem1_Click);
             // 
             // teamToolStripMenuItem
             // 
             this.teamToolStripMenuItem.Name = "teamToolStripMenuItem";
-            this.teamToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
+            this.teamToolStripMenuItem.Size = new System.Drawing.Size(161, 34);
             this.teamToolStripMenuItem.Text = "Team";
             this.teamToolStripMenuItem.Click += new System.EventHandler(this.teamToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(38, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(55, 29);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // cBoxSearchTeam
             // 
             this.cBoxSearchTeam.FormattingEnabled = true;
-            this.cBoxSearchTeam.Location = new System.Drawing.Point(13, 30);
-            this.cBoxSearchTeam.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.cBoxSearchTeam.Location = new System.Drawing.Point(20, 46);
+            this.cBoxSearchTeam.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cBoxSearchTeam.Name = "cBoxSearchTeam";
-            this.cBoxSearchTeam.Size = new System.Drawing.Size(304, 21);
+            this.cBoxSearchTeam.Size = new System.Drawing.Size(454, 28);
             this.cBoxSearchTeam.TabIndex = 3;
             // 
             // dgvTeam
             // 
             this.dgvTeam.AllowUserToAddRows = false;
             this.dgvTeam.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTeam.Location = new System.Drawing.Point(13, 61);
-            this.dgvTeam.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.dgvTeam.Location = new System.Drawing.Point(20, 94);
+            this.dgvTeam.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.dgvTeam.Name = "dgvTeam";
             this.dgvTeam.RowHeadersWidth = 51;
             this.dgvTeam.RowTemplate.Height = 24;
-            this.dgvTeam.Size = new System.Drawing.Size(608, 217);
+            this.dgvTeam.Size = new System.Drawing.Size(912, 334);
             this.dgvTeam.TabIndex = 5;
             // 
             // lbl_teamname
             // 
             this.lbl_teamname.AutoSize = true;
             this.lbl_teamname.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_teamname.Location = new System.Drawing.Point(506, 281);
-            this.lbl_teamname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_teamname.Location = new System.Drawing.Point(759, 432);
             this.lbl_teamname.Name = "lbl_teamname";
-            this.lbl_teamname.Size = new System.Drawing.Size(68, 18);
+            this.lbl_teamname.Size = new System.Drawing.Size(102, 26);
             this.lbl_teamname.TabIndex = 10;
             this.lbl_teamname.Text = "...............";
             this.lbl_teamname.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -178,10 +169,9 @@
             // 
             this.lblStadium.AutoSize = true;
             this.lblStadium.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStadium.Location = new System.Drawing.Point(36, 300);
-            this.lblStadium.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblStadium.Location = new System.Drawing.Point(54, 462);
             this.lblStadium.Name = "lblStadium";
-            this.lblStadium.Size = new System.Drawing.Size(78, 24);
+            this.lblStadium.Size = new System.Drawing.Size(119, 32);
             this.lblStadium.TabIndex = 11;
             this.lblStadium.Text = "Stadium";
             // 
@@ -189,20 +179,18 @@
             // 
             this.dgvStadium.AllowUserToAddRows = false;
             this.dgvStadium.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvStadium.Location = new System.Drawing.Point(13, 341);
-            this.dgvStadium.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvStadium.Location = new System.Drawing.Point(20, 525);
             this.dgvStadium.Name = "dgvStadium";
             this.dgvStadium.RowHeadersWidth = 62;
             this.dgvStadium.RowTemplate.Height = 28;
-            this.dgvStadium.Size = new System.Drawing.Size(416, 112);
+            this.dgvStadium.Size = new System.Drawing.Size(624, 172);
             this.dgvStadium.TabIndex = 12;
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(334, 26);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSearch.Location = new System.Drawing.Point(501, 40);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(82, 26);
+            this.btnSearch.Size = new System.Drawing.Size(123, 40);
             this.btnSearch.TabIndex = 13;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -212,9 +200,10 @@
             // 
             this.lblStadName.AutoSize = true;
             this.lblStadName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStadName.Location = new System.Drawing.Point(541, 354);
+            this.lblStadName.Location = new System.Drawing.Point(812, 545);
+            this.lblStadName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblStadName.Name = "lblStadName";
-            this.lblStadName.Size = new System.Drawing.Size(51, 20);
+            this.lblStadName.Size = new System.Drawing.Size(79, 29);
             this.lblStadName.TabIndex = 14;
             this.lblStadName.Text = "label1";
             this.lblStadName.Visible = false;
@@ -223,9 +212,11 @@
             // 
             this.dgvPlayer.AllowUserToAddRows = false;
             this.dgvPlayer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPlayer.Location = new System.Drawing.Point(13, 61);
+            this.dgvPlayer.Location = new System.Drawing.Point(20, 94);
+            this.dgvPlayer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvPlayer.Name = "dgvPlayer";
-            this.dgvPlayer.Size = new System.Drawing.Size(403, 391);
+            this.dgvPlayer.RowHeadersWidth = 62;
+            this.dgvPlayer.Size = new System.Drawing.Size(604, 602);
             this.dgvPlayer.TabIndex = 15;
             this.dgvPlayer.Visible = false;
             // 
@@ -233,9 +224,10 @@
             // 
             this.lbStadCity.AutoSize = true;
             this.lbStadCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbStadCity.Location = new System.Drawing.Point(541, 382);
+            this.lbStadCity.Location = new System.Drawing.Point(812, 588);
+            this.lbStadCity.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbStadCity.Name = "lbStadCity";
-            this.lbStadCity.Size = new System.Drawing.Size(51, 20);
+            this.lbStadCity.Size = new System.Drawing.Size(79, 29);
             this.lbStadCity.TabIndex = 16;
             this.lbStadCity.Text = "label2";
             this.lbStadCity.Visible = false;
@@ -244,9 +236,10 @@
             // 
             this.lblStadCap.AutoSize = true;
             this.lblStadCap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStadCap.Location = new System.Drawing.Point(541, 405);
+            this.lblStadCap.Location = new System.Drawing.Point(812, 623);
+            this.lblStadCap.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblStadCap.Name = "lblStadCap";
-            this.lblStadCap.Size = new System.Drawing.Size(51, 20);
+            this.lblStadCap.Size = new System.Drawing.Size(79, 29);
             this.lblStadCap.TabIndex = 17;
             this.lblStadCap.Text = "label3";
             this.lblStadCap.Visible = false;
@@ -255,9 +248,10 @@
             // 
             this.lbCap.AutoSize = true;
             this.lbCap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCap.Location = new System.Drawing.Point(453, 405);
+            this.lbCap.Location = new System.Drawing.Point(680, 623);
+            this.lbCap.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbCap.Name = "lbCap";
-            this.lbCap.Size = new System.Drawing.Size(70, 20);
+            this.lbCap.Size = new System.Drawing.Size(105, 29);
             this.lbCap.TabIndex = 20;
             this.lbCap.Text = "Capacity";
             this.lbCap.Visible = false;
@@ -266,9 +260,10 @@
             // 
             this.lbCity.AutoSize = true;
             this.lbCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCity.Location = new System.Drawing.Point(453, 382);
+            this.lbCity.Location = new System.Drawing.Point(680, 588);
+            this.lbCity.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbCity.Name = "lbCity";
-            this.lbCity.Size = new System.Drawing.Size(35, 20);
+            this.lbCity.Size = new System.Drawing.Size(53, 29);
             this.lbCity.TabIndex = 19;
             this.lbCity.Text = "City";
             this.lbCity.Visible = false;
@@ -277,28 +272,29 @@
             // 
             this.lbName.AutoSize = true;
             this.lbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbName.Location = new System.Drawing.Point(453, 354);
+            this.lbName.Location = new System.Drawing.Point(680, 545);
+            this.lbName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(51, 20);
+            this.lbName.Size = new System.Drawing.Size(78, 29);
             this.lbName.TabIndex = 18;
             this.lbName.Text = "Name";
             this.lbName.Visible = false;
             // 
             // pictBoxLogo
             // 
-            this.pictBoxLogo.Location = new System.Drawing.Point(477, 61);
-            this.pictBoxLogo.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.pictBoxLogo.Location = new System.Drawing.Point(716, 94);
+            this.pictBoxLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictBoxLogo.Name = "pictBoxLogo";
-            this.pictBoxLogo.Size = new System.Drawing.Size(200, 200);
+            this.pictBoxLogo.Size = new System.Drawing.Size(300, 308);
             this.pictBoxLogo.TabIndex = 4;
             this.pictBoxLogo.TabStop = false;
             this.pictBoxLogo.Visible = false;
             // 
             // Team
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(783, 464);
+            this.ClientSize = new System.Drawing.Size(1174, 714);
             this.Controls.Add(this.lbCap);
             this.Controls.Add(this.lbCity);
             this.Controls.Add(this.lbName);
@@ -315,7 +311,7 @@
             this.Controls.Add(this.cBoxSearchTeam);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Team";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Team";
@@ -347,7 +343,6 @@
         private System.Windows.Forms.Label lblStadium;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.DataGridView dgvStadium;
-        private System.Windows.Forms.ToolStripMenuItem playerToolStripMenuItem1;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Label lblStadName;
         private System.Windows.Forms.DataGridView dgvPlayer;

@@ -159,20 +159,11 @@ namespace NBA
             lbCap.Visible = true;
         }
 
-        private void playerToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            UpdatePlayer updatePlayer = new UpdatePlayer();
-            updatePlayer.ShowDialog();
-            this.Close();
-        }
-
         private void teamToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Visible = false;
             UpdateTeam updateTeam = new UpdateTeam();
             updateTeam.ShowDialog();
-            this.Close();
         }
     }
 }
