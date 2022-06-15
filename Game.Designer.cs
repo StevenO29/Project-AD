@@ -245,7 +245,7 @@
             this.lbStad.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbStad.AutoSize = true;
             this.lbStad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbStad.Location = new System.Drawing.Point(452, 426);
+            this.lbStad.Location = new System.Drawing.Point(473, 434);
             this.lbStad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbStad.Name = "lbStad";
             this.lbStad.Size = new System.Drawing.Size(49, 29);
