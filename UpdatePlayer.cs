@@ -164,6 +164,13 @@ namespace NBA
                     sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
                     sqlCommand.ExecuteNonQuery();
                     sqlConnect.Close();
+
+                    sqlQuery = "update boxscore set player_id = '" + tbID.Text + "' where player_id = '" + playerid + "';";
+                    sqlConnect.Open();
+                    sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+                    sqlCommand.ExecuteNonQuery();
+                    sqlConnect.Close();
+
                     playerid = "";
                     tbID.Text = "";
                     tbNameU.Text = "";
