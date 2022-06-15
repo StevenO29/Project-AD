@@ -60,23 +60,7 @@ namespace NBA
 
         private void Team_Load(object sender, EventArgs e)
         {
-            /*
-            sqlQuery = "select Team_Name as `Team Name`, Team_id as `Team ID`, City, CONF_AREA as `Conference Area`, WINS as `Wins`, LOSSES as `Loss`, L10 as `Last 10 Game` from team order by 1";
-            sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
-            sqlAdapter = new MySqlDataAdapter(sqlCommand);
-            sqlAdapter.Fill(team);
-            cBoxSearchTeam.DataSource = team;
-            cBoxSearchTeam.DisplayMember = "Team Name";
-            cBoxSearchTeam.ValueMember = "Team ID";
-            dgvTeam.DataSource = team;
-            sqlQuery = "select stadium_name as `Stadium Name`, stadium_id as `Stadium ID`, team_id as `Team ID`, capacity as `Capacity`, city as `City` from stadium order by 1";
-            sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
-            sqlAdapter = new MySqlDataAdapter(sqlCommand);
-            sqlAdapter.Fill(stadium);
-            dgvStadium.DataSource = stadium;
-            */
-
-            //coba
+            ////////////////////////////////////////////////
             sqlQuery = "select Team_Name as `Team Name`, Team_id as `Team ID` from team where status_del = 0 order by 1";
             sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
             sqlAdapter = new MySqlDataAdapter(sqlCommand);
@@ -109,6 +93,10 @@ namespace NBA
             lbCity.Visible = false;
             lbCap.Visible = false;
         }
+        ////////////////////////////////////////////////
+
+
+
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
@@ -128,18 +116,11 @@ namespace NBA
             dgvPlayer.DataSource = teamPlayer;
             dgvPlayer.RowHeadersVisible = false;
 
+
             //logo
             pictBoxLogo.Image = (Image)Properties.Resources.ResourceManager.GetObject(cBoxSearchTeam.SelectedValue.ToString());
             pictBoxLogo.SizeMode = PictureBoxSizeMode.StretchImage;
             lbl_teamname.Text = team.Rows[cBoxSearchTeam.SelectedIndex][0].ToString();
-
-            /*
-            sqlQuery = "select stadium_name as `Stadium Name`, stadium_id as `Stadium ID`, team_id as `Team ID`,  capacity as `Capacity`, city as `City` from stadium where team_id = '" + cBoxSearchTeam.SelectedValue.ToString() + "' order by 1";
-            sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
-            sqlAdapter = new MySqlDataAdapter(sqlCommand);
-            sqlAdapter.Fill(stadium);
-            dgvStadium.DataSource = stadium;
-            */
 
             lblStadium.Left = 474;
             lblStadium.Top = 320;

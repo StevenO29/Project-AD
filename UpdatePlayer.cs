@@ -42,13 +42,13 @@ namespace NBA
             openForm.ShowDialog();
         }
 
-        private void UpdatePlayer_Load(object sender, EventArgs e)
+        private void UpdatePlayer_Load(object sender, EventArgs e) //form load
         {
             tbID.MaxLength = 9;
             LoadForm();
             dtTeam.Clear();
             dtPlayer.Clear();
-            sqlQuery = "select team_id, team_name from team;";
+            sqlQuery = "select team_id, team_name from team order by 2;";
             sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
             sqlAdapter = new MySqlDataAdapter(sqlCommand);
             sqlAdapter.Fill(dtTeam);
@@ -58,12 +58,16 @@ namespace NBA
             cbTeamS.ValueMember = "team_id";
             lbAva.Text = "";
         }
-        private void LoadForm()
+        private void LoadForm() //method load
         {
             lbAva.Visible = false;
             cbTeamS.Text = "";
+            dtPlayer.Clear();
+            if (chbAllData.Checked == true)
+                sqlQuery = "select player_id, player_name from player where status_del = 1 order by 2;";
+            else
+                sqlQuery = "select player_id, player_name from player where team_id = '" + teamid + "'" + selecteddata + " order by 2;";
 
-            sqlQuery = "select player_id, player_name from player where team_id = '" + teamid + "'" + selecteddata + ";";
             sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
             sqlAdapter = new MySqlDataAdapter(sqlCommand);
             sqlAdapter.Fill(dtPlayer);
@@ -71,9 +75,10 @@ namespace NBA
             cbPlayerS.DisplayMember = "player_name";
             cbPlayerS.ValueMember = "player_id";
             cbPlayerS.Text = "";
+
         }
 
-        private void cbTeamS_SelectedIndexChanged(object sender, EventArgs e)
+        private void cbTeamS_SelectedIndexChanged(object sender, EventArgs e) //setelah team dipilih
         {
             dtPlayer.Clear();
             teamid = cbTeamS.SelectedValue.ToString();
@@ -87,7 +92,7 @@ namespace NBA
             LoadForm();
         }
 
-        private void cbPlayerS_SelectedIndexChanged(object sender, EventArgs e)
+        private void cbPlayerS_SelectedIndexChanged(object sender, EventArgs e) //player id untuk di update
         {
             playerid = "";
             if (cbPlayerS.SelectedValue != null)
@@ -99,7 +104,7 @@ namespace NBA
             if (playerid != null && playerid != "")
             {
                 dtTeamU.Clear();
-                sqlQuery = "select team_id, team_name from team;";
+                sqlQuery = "select team_id, team_name from team order by 2;";
                 sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
                 sqlAdapter = new MySqlDataAdapter(sqlCommand);
                 sqlAdapter.Fill(dtTeamU);
@@ -118,7 +123,7 @@ namespace NBA
                 cbPosU.ValueMember = "pos";
 
                 dtDetail.Clear();
-                sqlQuery = "select PLAYER_ID, PLAYER_NAME, team_id, pos, status_del from player where PLAYER_ID = '" + playerid + "' " + selecteddata + ";";
+                sqlQuery = "select PLAYER_ID, PLAYER_NAME, team_id, pos, status_del from player where PLAYER_ID = '" + playerid + "' " + selecteddata + " order by 2;";
                 sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
                 sqlAdapter = new MySqlDataAdapter(sqlCommand);
                 sqlAdapter.Fill(dtDetail);
@@ -196,9 +201,15 @@ namespace NBA
         private void chbAllData_CheckedChanged(object sender, EventArgs e)
         {
             if (chbAllData.Checked == true)
-                selecteddata = "";
+            {
+                cbTeamS.Enabled = false;
+                selecteddata = "and status_del = 1";
+            }
             else
+            {
+                cbTeamS.Enabled = true;
                 selecteddata = "and status_del = 0";
+            }
             cbTeamS.SelectedIndex = 0;
             LoadForm();
             cbTeamS.Text = "";

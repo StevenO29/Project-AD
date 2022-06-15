@@ -34,7 +34,7 @@ namespace NBA
         private void UpdateTeam_Load(object sender, EventArgs e)
         {
             tbTeamID.MaxLength = 3;
-            statusdel = "select Team_Name as `Name`, Team_id as ID from team where status_del = 0;";
+            statusdel = "select Team_Name as `Name`, Team_id as ID from team where status_del = 0 order by 1;";
             LoadForm();
         }
 
@@ -111,12 +111,12 @@ namespace NBA
         {
             if (chbDel.Checked == true)
             {
-                statusdel = "select Team_Name as `Name`, Team_id as ID from team;";
+                statusdel = "select Team_Name as `Name`, Team_id as ID from team where status_del = 1 order by 1;";
                 LoadForm();
             }
             else
             {
-                statusdel = "select Team_Name as `Name`, Team_id as ID from team where status_del = 0;";
+                statusdel = "select Team_Name as `Name`, Team_id as ID from team where status_del = 0 order by 1;";
                 LoadForm();
             }
                 
