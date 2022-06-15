@@ -74,14 +74,53 @@ namespace NBA
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (lblAva.Text == "Available")
+            if (lblAva.Text == "Available" && tbTeamID.Text != "" && tbTeamName.Text != "" && cbStad.Text != "" && cbStad.Text != "")
             {
-                sqlQuery = "UPDATE team SET team_id = '"+ tbTeamID.Text +"', Team_name = '"+ tbTeamName.Text +"', stadium_id = '"+ cbStad.SelectedValue.ToString() +"', City = '"+ tbCity.Text +"' WHERE team_id = '"+ teamid +"';";
-                sqlConnect.Open();
-                sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
-                sqlCommand.ExecuteNonQuery();
-                sqlConnect.Close();
+                var confirmResult = MessageBox.Show("Are you sure to update this team?", "Confirm Update!", MessageBoxButtons.YesNo);
+                if (confirmResult == DialogResult.Yes)
+                {
+                    //table team
+                    sqlQuery = "UPDATE team SET team_id = '" + tbTeamID.Text + "', Team_name = '" + tbTeamName.Text + "', stadium_id = '" + cbStad.SelectedValue.ToString() + "', City = '" + tbCity.Text + "' WHERE team_id = '" + teamid + "';";
+                    sqlConnect.Open();
+                    sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+                    sqlCommand.ExecuteNonQuery();
+                    sqlConnect.Close();
+                    //table stadium
+                    sqlQuery = "update stadium set team_id = '" + tbTeamID.Text + "' where team_id = '" + teamid + "';";
+                    sqlConnect.Open();
+                    sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+                    sqlCommand.ExecuteNonQuery();
+                    sqlConnect.Close();
+                    //table game
+                    sqlQuery = "update game set hometeam_id = '" + tbTeamID.Text + "' where hometeam_id = '" + teamid + "';";
+                    sqlConnect.Open();
+                    sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+                    sqlCommand.ExecuteNonQuery();
+                    sqlConnect.Close();
+
+                    sqlQuery = "update game set awayteam_id = '" + tbTeamID.Text + "' where awayteam_id = '" + teamid + "';";
+                    sqlConnect.Open();
+                    sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+                    sqlCommand.ExecuteNonQuery();
+                    sqlConnect.Close();
+                    //table boxscore
+                    sqlQuery = "update boxscore set team_id = '" + tbTeamID.Text + "' where team_id = '" + teamid + "';";
+                    sqlConnect.Open();
+                    sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+                    sqlCommand.ExecuteNonQuery();
+                    sqlConnect.Close();
+                    //table player
+                    sqlQuery = "update player set team_id = '" + tbTeamID.Text + "' where team_id = '" + teamid + "';";
+                    sqlConnect.Open();
+                    sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+                    sqlCommand.ExecuteNonQuery();
+                    sqlConnect.Close();
+
+                    LoadForm();
+                }
             }
+            else
+                MessageBox.Show("Ada data yang tidak diisi");
         }
 
         private void tbTeamID_TextChanged(object sender, EventArgs e)
