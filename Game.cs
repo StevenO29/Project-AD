@@ -91,7 +91,7 @@ namespace NBA
             Away = dtGame.Rows[Posisi][4].ToString();
             lbl_teamhome.Text = dtGame.Rows[Posisi][2].ToString();
             lbl_teamaway.Text = dtGame.Rows[Posisi][5].ToString();
-            lbStad.Text = $"Stadium :\n{ dtGame.Rows[Posisi][8].ToString()}";
+            lbStad.Text = dtGame.Rows[Posisi][8].ToString();
             DetailMatch = dtGame.Rows[Posisi][7].ToString();
             pbox_home.Image = (Image)Properties.Resources.ResourceManager.GetObject(Home);
             pbox_home.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -157,6 +157,11 @@ namespace NBA
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }

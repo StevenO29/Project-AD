@@ -50,21 +50,21 @@
             // 
             this.lblPID.AutoSize = true;
             this.lblPID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPID.Location = new System.Drawing.Point(97, 94);
+            this.lblPID.Location = new System.Drawing.Point(86, 75);
             this.lblPID.Name = "lblPID";
-            this.lblPID.Size = new System.Drawing.Size(136, 32);
+            this.lblPID.Size = new System.Drawing.Size(116, 29);
             this.lblPID.TabIndex = 0;
             this.lblPID.Text = "Player ID ";
             // 
             // menuStrip1
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1174, 33);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1044, 28);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -73,7 +73,7 @@
             this.exitToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(55, 29);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(47, 24);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -81,9 +81,9 @@
             // 
             this.lblTID.AutoSize = true;
             this.lblTID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTID.Location = new System.Drawing.Point(97, 185);
+            this.lblTID.Location = new System.Drawing.Point(86, 148);
             this.lblTID.Name = "lblTID";
-            this.lblTID.Size = new System.Drawing.Size(120, 32);
+            this.lblTID.Size = new System.Drawing.Size(105, 29);
             this.lblTID.TabIndex = 2;
             this.lblTID.Text = "Team ID";
             // 
@@ -91,9 +91,9 @@
             // 
             this.lblPName.AutoSize = true;
             this.lblPName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPName.Location = new System.Drawing.Point(97, 275);
+            this.lblPName.Location = new System.Drawing.Point(86, 220);
             this.lblPName.Name = "lblPName";
-            this.lblPName.Size = new System.Drawing.Size(184, 32);
+            this.lblPName.Size = new System.Drawing.Size(158, 29);
             this.lblPName.TabIndex = 3;
             this.lblPName.Text = "Player Name ";
             // 
@@ -101,9 +101,9 @@
             // 
             this.lblPosition.AutoSize = true;
             this.lblPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPosition.Location = new System.Drawing.Point(97, 367);
+            this.lblPosition.Location = new System.Drawing.Point(86, 294);
             this.lblPosition.Name = "lblPosition";
-            this.lblPosition.Size = new System.Drawing.Size(117, 32);
+            this.lblPosition.Size = new System.Drawing.Size(100, 29);
             this.lblPosition.TabIndex = 4;
             this.lblPosition.Text = "Position";
             // 
@@ -111,48 +111,53 @@
             // 
             this.lblUmur.AutoSize = true;
             this.lblUmur.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUmur.Location = new System.Drawing.Point(97, 453);
+            this.lblUmur.Location = new System.Drawing.Point(86, 362);
             this.lblUmur.Name = "lblUmur";
-            this.lblUmur.Size = new System.Drawing.Size(65, 32);
+            this.lblUmur.Size = new System.Drawing.Size(56, 29);
             this.lblUmur.TabIndex = 5;
             this.lblUmur.Text = "Age";
             // 
             // txtBoxPlayerID
             // 
-            this.txtBoxPlayerID.Location = new System.Drawing.Point(358, 99);
+            this.txtBoxPlayerID.Location = new System.Drawing.Point(318, 79);
+            this.txtBoxPlayerID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtBoxPlayerID.MaxLength = 9;
             this.txtBoxPlayerID.Name = "txtBoxPlayerID";
-            this.txtBoxPlayerID.Size = new System.Drawing.Size(226, 26);
+            this.txtBoxPlayerID.Size = new System.Drawing.Size(201, 22);
             this.txtBoxPlayerID.TabIndex = 6;
             // 
             // txtBoxTeamID
             // 
-            this.txtBoxTeamID.Location = new System.Drawing.Point(358, 191);
+            this.txtBoxTeamID.Location = new System.Drawing.Point(318, 153);
+            this.txtBoxTeamID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtBoxTeamID.MaxLength = 3;
             this.txtBoxTeamID.Name = "txtBoxTeamID";
-            this.txtBoxTeamID.Size = new System.Drawing.Size(226, 26);
+            this.txtBoxTeamID.Size = new System.Drawing.Size(201, 22);
             this.txtBoxTeamID.TabIndex = 7;
             // 
             // txtBoxPlayerName
             // 
-            this.txtBoxPlayerName.Location = new System.Drawing.Point(358, 275);
+            this.txtBoxPlayerName.Location = new System.Drawing.Point(318, 220);
+            this.txtBoxPlayerName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtBoxPlayerName.Name = "txtBoxPlayerName";
-            this.txtBoxPlayerName.Size = new System.Drawing.Size(463, 26);
+            this.txtBoxPlayerName.Size = new System.Drawing.Size(412, 22);
             this.txtBoxPlayerName.TabIndex = 8;
             // 
             // txtBoxPOS
             // 
-            this.txtBoxPOS.Location = new System.Drawing.Point(358, 367);
+            this.txtBoxPOS.Location = new System.Drawing.Point(318, 294);
+            this.txtBoxPOS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtBoxPOS.MaxLength = 3;
             this.txtBoxPOS.Name = "txtBoxPOS";
-            this.txtBoxPOS.Size = new System.Drawing.Size(120, 26);
+            this.txtBoxPOS.Size = new System.Drawing.Size(107, 22);
             this.txtBoxPOS.TabIndex = 9;
             // 
             // numUpDownAge
             // 
-            this.numUpDownAge.Location = new System.Drawing.Point(358, 458);
+            this.numUpDownAge.Location = new System.Drawing.Point(318, 366);
+            this.numUpDownAge.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.numUpDownAge.Name = "numUpDownAge";
-            this.numUpDownAge.Size = new System.Drawing.Size(120, 26);
+            this.numUpDownAge.Size = new System.Drawing.Size(107, 22);
             this.numUpDownAge.TabIndex = 10;
             this.numUpDownAge.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -161,9 +166,10 @@
             this.btnCancel.BackColor = System.Drawing.Color.Red;
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCancel.Location = new System.Drawing.Point(847, 606);
+            this.btnCancel.Location = new System.Drawing.Point(753, 485);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(138, 60);
+            this.btnCancel.Size = new System.Drawing.Size(123, 48);
             this.btnCancel.TabIndex = 11;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -172,9 +178,10 @@
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.Lime;
-            this.btnSave.Location = new System.Drawing.Point(991, 606);
+            this.btnSave.Location = new System.Drawing.Point(881, 485);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(138, 60);
+            this.btnSave.Size = new System.Drawing.Size(123, 48);
             this.btnSave.TabIndex = 12;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -182,9 +189,10 @@
             // 
             // AddPlayer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1174, 714);
+            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.ClientSize = new System.Drawing.Size(1044, 571);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.numUpDownAge);
@@ -199,6 +207,7 @@
             this.Controls.Add(this.lblPID);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AddPlayer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Player";
