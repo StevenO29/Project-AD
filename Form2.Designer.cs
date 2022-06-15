@@ -44,7 +44,7 @@
             this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnExit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnExit.Location = new System.Drawing.Point(698, 8);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(67, 29);
             this.btnExit.TabIndex = 4;
@@ -56,7 +56,7 @@
             this.btnMenuPlayer.BackgroundImage = global::NBA.Properties.Resources._3;
             this.btnMenuPlayer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMenuPlayer.Location = new System.Drawing.Point(51, 319);
-            this.btnMenuPlayer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMenuPlayer.Margin = new System.Windows.Forms.Padding(2);
             this.btnMenuPlayer.Name = "btnMenuPlayer";
             this.btnMenuPlayer.Size = new System.Drawing.Size(275, 98);
             this.btnMenuPlayer.TabIndex = 3;
@@ -68,7 +68,7 @@
             this.btnMenuTeam.BackgroundImage = global::NBA.Properties.Resources._2;
             this.btnMenuTeam.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMenuTeam.Location = new System.Drawing.Point(51, 179);
-            this.btnMenuTeam.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMenuTeam.Margin = new System.Windows.Forms.Padding(2);
             this.btnMenuTeam.Name = "btnMenuTeam";
             this.btnMenuTeam.Size = new System.Drawing.Size(275, 98);
             this.btnMenuTeam.TabIndex = 2;
@@ -81,7 +81,7 @@
             this.btnMenuGame.BackgroundImage = global::NBA.Properties.Resources._1;
             this.btnMenuGame.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMenuGame.Location = new System.Drawing.Point(51, 38);
-            this.btnMenuGame.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMenuGame.Margin = new System.Windows.Forms.Padding(2);
             this.btnMenuGame.Name = "btnMenuGame";
             this.btnMenuGame.Size = new System.Drawing.Size(275, 98);
             this.btnMenuGame.TabIndex = 1;
@@ -92,7 +92,7 @@
             // 
             this.picBoxBackground.Image = ((System.Drawing.Image)(resources.GetObject("picBoxBackground.Image")));
             this.picBoxBackground.Location = new System.Drawing.Point(-11, 0);
-            this.picBoxBackground.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picBoxBackground.Margin = new System.Windows.Forms.Padding(2);
             this.picBoxBackground.Name = "picBoxBackground";
             this.picBoxBackground.Size = new System.Drawing.Size(794, 462);
             this.picBoxBackground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -109,7 +109,8 @@
             this.Controls.Add(this.btnMenuTeam);
             this.Controls.Add(this.btnMenuGame);
             this.Controls.Add(this.picBoxBackground);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main Menu";
