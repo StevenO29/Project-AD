@@ -35,19 +35,18 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.mainMenuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addPlayerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.updateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dgv_player = new System.Windows.Forms.DataGridView();
             this.cBoxPlayerName = new System.Windows.Forms.ComboBox();
             this.lblSearch = new System.Windows.Forms.Label();
-            this.addPlayerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.updateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_player)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuToolStripMenuItem,
@@ -55,7 +54,8 @@
             this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1174, 33);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1044, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -67,32 +67,32 @@
             this.toolStripSeparator1,
             this.mainMenuToolStripMenuItem});
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(73, 29);
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(60, 24);
             this.menuToolStripMenuItem.Text = "Menu";
             // 
             // gameToolStripMenuItem
             // 
             this.gameToolStripMenuItem.Name = "gameToolStripMenuItem";
-            this.gameToolStripMenuItem.Size = new System.Drawing.Size(203, 34);
+            this.gameToolStripMenuItem.Size = new System.Drawing.Size(166, 26);
             this.gameToolStripMenuItem.Text = "Game";
             this.gameToolStripMenuItem.Click += new System.EventHandler(this.gameToolStripMenuItem_Click);
             // 
             // teamToolStripMenuItem
             // 
             this.teamToolStripMenuItem.Name = "teamToolStripMenuItem";
-            this.teamToolStripMenuItem.Size = new System.Drawing.Size(203, 34);
+            this.teamToolStripMenuItem.Size = new System.Drawing.Size(166, 26);
             this.teamToolStripMenuItem.Text = "Team";
             this.teamToolStripMenuItem.Click += new System.EventHandler(this.teamToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(200, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(163, 6);
             // 
             // mainMenuToolStripMenuItem
             // 
             this.mainMenuToolStripMenuItem.Name = "mainMenuToolStripMenuItem";
-            this.mainMenuToolStripMenuItem.Size = new System.Drawing.Size(203, 34);
+            this.mainMenuToolStripMenuItem.Size = new System.Drawing.Size(166, 26);
             this.mainMenuToolStripMenuItem.Text = "Main Menu";
             this.mainMenuToolStripMenuItem.Click += new System.EventHandler(this.mainMenuToolStripMenuItem_Click);
             // 
@@ -102,66 +102,65 @@
             this.addPlayerToolStripMenuItem,
             this.updateToolStripMenuItem});
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-            this.addToolStripMenuItem.Size = new System.Drawing.Size(58, 29);
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(49, 24);
             this.addToolStripMenuItem.Text = "Edit";
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(55, 29);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
-            // dgv_player
-            // 
-            this.dgv_player.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_player.Location = new System.Drawing.Point(14, 75);
-            this.dgv_player.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dgv_player.Name = "dgv_player";
-            this.dgv_player.ReadOnly = true;
-            this.dgv_player.RowHeadersWidth = 51;
-            this.dgv_player.RowTemplate.Height = 24;
-            this.dgv_player.Size = new System.Drawing.Size(1148, 624);
-            this.dgv_player.TabIndex = 1;
-            // 
-            // cBoxPlayerName
-            // 
-            this.cBoxPlayerName.FormattingEnabled = true;
-            this.cBoxPlayerName.Location = new System.Drawing.Point(134, 39);
-            this.cBoxPlayerName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cBoxPlayerName.Name = "cBoxPlayerName";
-            this.cBoxPlayerName.Size = new System.Drawing.Size(623, 28);
-            this.cBoxPlayerName.TabIndex = 2;
-            this.cBoxPlayerName.SelectedIndexChanged += new System.EventHandler(this.cBoxPlayerName_SelectedIndexChanged);
-            // 
-            // lblSearch
-            // 
-            this.lblSearch.AutoSize = true;
-            this.lblSearch.Location = new System.Drawing.Point(12, 42);
-            this.lblSearch.Name = "lblSearch";
-            this.lblSearch.Size = new System.Drawing.Size(116, 20);
-            this.lblSearch.TabIndex = 3;
-            this.lblSearch.Text = "Search Team : ";
             // 
             // addPlayerToolStripMenuItem
             // 
             this.addPlayerToolStripMenuItem.Name = "addPlayerToolStripMenuItem";
-            this.addPlayerToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.addPlayerToolStripMenuItem.Size = new System.Drawing.Size(141, 26);
             this.addPlayerToolStripMenuItem.Text = "Add";
             this.addPlayerToolStripMenuItem.Click += new System.EventHandler(this.addPlayerToolStripMenuItem_Click);
             // 
             // updateToolStripMenuItem
             // 
             this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
-            this.updateToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.updateToolStripMenuItem.Size = new System.Drawing.Size(141, 26);
             this.updateToolStripMenuItem.Text = "Update";
             this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
             // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(47, 24);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // dgv_player
+            // 
+            this.dgv_player.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_player.Location = new System.Drawing.Point(12, 60);
+            this.dgv_player.Name = "dgv_player";
+            this.dgv_player.ReadOnly = true;
+            this.dgv_player.RowHeadersWidth = 51;
+            this.dgv_player.RowTemplate.Height = 24;
+            this.dgv_player.Size = new System.Drawing.Size(1020, 499);
+            this.dgv_player.TabIndex = 1;
+            // 
+            // cBoxPlayerName
+            // 
+            this.cBoxPlayerName.FormattingEnabled = true;
+            this.cBoxPlayerName.Location = new System.Drawing.Point(119, 31);
+            this.cBoxPlayerName.Name = "cBoxPlayerName";
+            this.cBoxPlayerName.Size = new System.Drawing.Size(554, 24);
+            this.cBoxPlayerName.TabIndex = 2;
+            this.cBoxPlayerName.SelectedIndexChanged += new System.EventHandler(this.cBoxPlayerName_SelectedIndexChanged);
+            // 
+            // lblSearch
+            // 
+            this.lblSearch.AutoSize = true;
+            this.lblSearch.Location = new System.Drawing.Point(11, 34);
+            this.lblSearch.Name = "lblSearch";
+            this.lblSearch.Size = new System.Drawing.Size(105, 17);
+            this.lblSearch.TabIndex = 3;
+            this.lblSearch.Text = "Search Team : ";
+            // 
             // Player
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1174, 714);
+            this.BackgroundImage = global::NBA.Properties.Resources.Untitled_design__2_;
+            this.ClientSize = new System.Drawing.Size(1044, 571);
             this.Controls.Add(this.lblSearch);
             this.Controls.Add(this.cBoxPlayerName);
             this.Controls.Add(this.dgv_player);

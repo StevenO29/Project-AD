@@ -258,5 +258,8 @@
   <ItemGroup>
     <None Include="Resources\Untitled design %282%29.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NBA-75th-anniversary-logo-removebg-preview %281%29 %282%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

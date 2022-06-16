@@ -48,9 +48,11 @@
             this.picBoxAway = new System.Windows.Forms.PictureBox();
             this.pbox_home = new System.Windows.Forms.PictureBox();
             this.lbStad = new System.Windows.Forms.Label();
+            this.pBox_logoNBA = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxAway)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbox_home)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox_logoNBA)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -61,8 +63,8 @@
             this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(783, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 1, 0, 1);
+            this.menuStrip1.Size = new System.Drawing.Size(1044, 26);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -74,39 +76,39 @@
             this.toolStripSeparator1,
             this.mainMenuToolStripMenuItem});
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 22);
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(60, 24);
             this.menuToolStripMenuItem.Text = "Menu";
             // 
             // teamToolStripMenuItem
             // 
             this.teamToolStripMenuItem.Name = "teamToolStripMenuItem";
-            this.teamToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.teamToolStripMenuItem.Size = new System.Drawing.Size(166, 26);
             this.teamToolStripMenuItem.Text = "Team";
             this.teamToolStripMenuItem.Click += new System.EventHandler(this.teamToolStripMenuItem_Click);
             // 
             // playerToolStripMenuItem
             // 
             this.playerToolStripMenuItem.Name = "playerToolStripMenuItem";
-            this.playerToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.playerToolStripMenuItem.Size = new System.Drawing.Size(166, 26);
             this.playerToolStripMenuItem.Text = "Player";
             this.playerToolStripMenuItem.Click += new System.EventHandler(this.playerToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(132, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(163, 6);
             // 
             // mainMenuToolStripMenuItem
             // 
             this.mainMenuToolStripMenuItem.Name = "mainMenuToolStripMenuItem";
-            this.mainMenuToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.mainMenuToolStripMenuItem.Size = new System.Drawing.Size(166, 26);
             this.mainMenuToolStripMenuItem.Text = "Main Menu";
             this.mainMenuToolStripMenuItem.Click += new System.EventHandler(this.mainMenuToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(38, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(47, 24);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -114,10 +116,10 @@
             // 
             this.dateGame.CustomFormat = "yyyy-MM-dd";
             this.dateGame.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateGame.Location = new System.Drawing.Point(273, 45);
-            this.dateGame.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.dateGame.Location = new System.Drawing.Point(364, 55);
+            this.dateGame.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dateGame.Name = "dateGame";
-            this.dateGame.Size = new System.Drawing.Size(226, 20);
+            this.dateGame.Size = new System.Drawing.Size(300, 22);
             this.dateGame.TabIndex = 1;
             this.dateGame.Value = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
             // 
@@ -125,10 +127,9 @@
             // 
             this.lbl_home.AutoSize = true;
             this.lbl_home.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_home.Location = new System.Drawing.Point(116, 89);
-            this.lbl_home.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_home.Location = new System.Drawing.Point(155, 110);
             this.lbl_home.Name = "lbl_home";
-            this.lbl_home.Size = new System.Drawing.Size(92, 36);
+            this.lbl_home.Size = new System.Drawing.Size(117, 42);
             this.lbl_home.TabIndex = 2;
             this.lbl_home.Text = "Home";
             // 
@@ -137,10 +138,9 @@
             this.lbl_teamhome.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_teamhome.AutoSize = true;
             this.lbl_teamhome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_teamhome.Location = new System.Drawing.Point(78, 354);
-            this.lbl_teamhome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_teamhome.Location = new System.Drawing.Point(104, 436);
             this.lbl_teamhome.Name = "lbl_teamhome";
-            this.lbl_teamhome.Size = new System.Drawing.Size(60, 25);
+            this.lbl_teamhome.Size = new System.Drawing.Size(78, 31);
             this.lbl_teamhome.TabIndex = 6;
             this.lbl_teamhome.Text = "........";
             this.lbl_teamhome.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -151,20 +151,19 @@
             this.lbl_teamaway.AutoEllipsis = true;
             this.lbl_teamaway.AutoSize = true;
             this.lbl_teamaway.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_teamaway.Location = new System.Drawing.Point(547, 354);
-            this.lbl_teamaway.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_teamaway.Location = new System.Drawing.Point(729, 436);
             this.lbl_teamaway.Name = "lbl_teamaway";
-            this.lbl_teamaway.Size = new System.Drawing.Size(60, 25);
+            this.lbl_teamaway.Size = new System.Drawing.Size(78, 31);
             this.lbl_teamaway.TabIndex = 7;
             this.lbl_teamaway.Text = "........";
             this.lbl_teamaway.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btn_detail
             // 
-            this.btn_detail.Location = new System.Drawing.Point(347, 406);
-            this.btn_detail.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btn_detail.Location = new System.Drawing.Point(463, 500);
+            this.btn_detail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_detail.Name = "btn_detail";
-            this.btn_detail.Size = new System.Drawing.Size(75, 37);
+            this.btn_detail.Size = new System.Drawing.Size(100, 46);
             this.btn_detail.TabIndex = 8;
             this.btn_detail.Text = "Detail";
             this.btn_detail.UseVisualStyleBackColor = true;
@@ -174,10 +173,9 @@
             // 
             this.lblAway.AutoSize = true;
             this.lblAway.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAway.Location = new System.Drawing.Point(566, 89);
-            this.lblAway.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAway.Location = new System.Drawing.Point(755, 110);
             this.lblAway.Name = "lblAway";
-            this.lblAway.Size = new System.Drawing.Size(89, 36);
+            this.lblAway.Size = new System.Drawing.Size(110, 42);
             this.lblAway.TabIndex = 10;
             this.lblAway.Text = "Away";
             // 
@@ -185,19 +183,18 @@
             // 
             this.lblVS.AutoSize = true;
             this.lblVS.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVS.Location = new System.Drawing.Point(351, 160);
-            this.lblVS.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblVS.Location = new System.Drawing.Point(468, 197);
             this.lblVS.Name = "lblVS";
-            this.lblVS.Size = new System.Drawing.Size(56, 36);
+            this.lblVS.Size = new System.Drawing.Size(68, 42);
             this.lblVS.TabIndex = 11;
             this.lblVS.Text = "VS";
             // 
             // btnNext
             // 
-            this.btnNext.Location = new System.Drawing.Point(680, 406);
-            this.btnNext.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnNext.Location = new System.Drawing.Point(907, 500);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(75, 37);
+            this.btnNext.Size = new System.Drawing.Size(100, 46);
             this.btnNext.TabIndex = 12;
             this.btnNext.Text = ">";
             this.btnNext.UseVisualStyleBackColor = true;
@@ -205,10 +202,10 @@
             // 
             // btnPrev
             // 
-            this.btnPrev.Location = new System.Drawing.Point(23, 406);
-            this.btnPrev.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnPrev.Location = new System.Drawing.Point(31, 500);
+            this.btnPrev.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnPrev.Name = "btnPrev";
-            this.btnPrev.Size = new System.Drawing.Size(75, 37);
+            this.btnPrev.Size = new System.Drawing.Size(100, 46);
             this.btnPrev.TabIndex = 13;
             this.btnPrev.Text = "<";
             this.btnPrev.UseVisualStyleBackColor = true;
@@ -216,9 +213,10 @@
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(518, 45);
+            this.btnSearch.Location = new System.Drawing.Point(691, 55);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.Size = new System.Drawing.Size(100, 28);
             this.btnSearch.TabIndex = 15;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -226,10 +224,10 @@
             // 
             // picBoxAway
             // 
-            this.picBoxAway.Location = new System.Drawing.Point(552, 151);
-            this.picBoxAway.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.picBoxAway.Location = new System.Drawing.Point(736, 186);
+            this.picBoxAway.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.picBoxAway.Name = "picBoxAway";
-            this.picBoxAway.Size = new System.Drawing.Size(150, 150);
+            this.picBoxAway.Size = new System.Drawing.Size(200, 185);
             this.picBoxAway.TabIndex = 9;
             this.picBoxAway.TabStop = false;
             // 
@@ -237,10 +235,10 @@
             // 
             this.pbox_home.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pbox_home.InitialImage = null;
-            this.pbox_home.Location = new System.Drawing.Point(83, 151);
-            this.pbox_home.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.pbox_home.Location = new System.Drawing.Point(111, 186);
+            this.pbox_home.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pbox_home.Name = "pbox_home";
-            this.pbox_home.Size = new System.Drawing.Size(150, 150);
+            this.pbox_home.Size = new System.Drawing.Size(200, 185);
             this.pbox_home.TabIndex = 4;
             this.pbox_home.TabStop = false;
             // 
@@ -249,18 +247,30 @@
             this.lbStad.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbStad.AutoSize = true;
             this.lbStad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbStad.Location = new System.Drawing.Point(315, 282);
+            this.lbStad.Location = new System.Drawing.Point(420, 347);
+            this.lbStad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbStad.Name = "lbStad";
-            this.lbStad.Size = new System.Drawing.Size(33, 20);
+            this.lbStad.Size = new System.Drawing.Size(42, 25);
             this.lbStad.TabIndex = 16;
             this.lbStad.Text = "......";
             this.lbStad.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pBox_logoNBA
+            // 
+            this.pBox_logoNBA.Image = global::NBA.Properties.Resources.NBA_75th_anniversary_logo_removebg_preview__1___2_;
+            this.pBox_logoNBA.Location = new System.Drawing.Point(944, 29);
+            this.pBox_logoNBA.Name = "pBox_logoNBA";
+            this.pBox_logoNBA.Size = new System.Drawing.Size(100, 70);
+            this.pBox_logoNBA.TabIndex = 18;
+            this.pBox_logoNBA.TabStop = false;
+            // 
             // Game
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(783, 464);
+            this.BackgroundImage = global::NBA.Properties.Resources.Untitled_design__2_;
+            this.ClientSize = new System.Drawing.Size(1044, 571);
+            this.Controls.Add(this.pBox_logoNBA);
             this.Controls.Add(this.lbStad);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnPrev);
@@ -277,7 +287,7 @@
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.Name = "Game";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Game";
@@ -286,6 +296,7 @@
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxAway)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbox_home)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox_logoNBA)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -313,5 +324,6 @@
         private System.Windows.Forms.Button btnPrev;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Label lbStad;
+        private System.Windows.Forms.PictureBox pBox_logoNBA;
     }
 }
