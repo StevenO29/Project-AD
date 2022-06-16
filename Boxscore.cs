@@ -39,6 +39,7 @@ namespace NBA
         {
             dtDetail.Clear();
             dtReferee.Clear();
+            dataDetail.RowHeadersVisible = false;
             lblRefereeName.Text = "";
             sqlQuery = "select distinct p.PLAYER_NAME as 'Player Name', t.team_name as 'Team Name', b.minute_play as 'Minute Play', b.field_goal as `Field Goal`, b.FIELD_GOAL_3 as `Field Goal 3`, b.FREE_THROW as `Free Throw`, b.assist as `Assist`, b.STEAL as `Steal`, b.`BLOCK` as `Block` from boxscore b left join team t on b.TEAM_ID = t.Team_id left join player p on p.PLAYER_ID = b.PLAYER_ID where b.GAME_ID = '" + Game_ID + "' and PLAYER_NAME is not null;";
             sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
