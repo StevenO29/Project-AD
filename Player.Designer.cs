@@ -47,7 +47,6 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuToolStripMenuItem,
@@ -55,8 +54,8 @@
             this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1174, 33);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
+            this.menuStrip1.Size = new System.Drawing.Size(783, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -68,32 +67,32 @@
             this.toolStripSeparator1,
             this.mainMenuToolStripMenuItem});
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(73, 29);
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 22);
             this.menuToolStripMenuItem.Text = "Menu";
             // 
             // gameToolStripMenuItem
             // 
             this.gameToolStripMenuItem.Name = "gameToolStripMenuItem";
-            this.gameToolStripMenuItem.Size = new System.Drawing.Size(203, 34);
+            this.gameToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.gameToolStripMenuItem.Text = "Game";
             this.gameToolStripMenuItem.Click += new System.EventHandler(this.gameToolStripMenuItem_Click);
             // 
             // teamToolStripMenuItem
             // 
             this.teamToolStripMenuItem.Name = "teamToolStripMenuItem";
-            this.teamToolStripMenuItem.Size = new System.Drawing.Size(203, 34);
+            this.teamToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.teamToolStripMenuItem.Text = "Team";
             this.teamToolStripMenuItem.Click += new System.EventHandler(this.teamToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(200, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(132, 6);
             // 
             // mainMenuToolStripMenuItem
             // 
             this.mainMenuToolStripMenuItem.Name = "mainMenuToolStripMenuItem";
-            this.mainMenuToolStripMenuItem.Size = new System.Drawing.Size(203, 34);
+            this.mainMenuToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.mainMenuToolStripMenuItem.Text = "Main Menu";
             this.mainMenuToolStripMenuItem.Click += new System.EventHandler(this.mainMenuToolStripMenuItem_Click);
             // 
@@ -103,74 +102,75 @@
             this.addPlayerToolStripMenuItem,
             this.updateToolStripMenuItem});
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-            this.addToolStripMenuItem.Size = new System.Drawing.Size(58, 29);
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(39, 22);
             this.addToolStripMenuItem.Text = "Edit";
             // 
             // addPlayerToolStripMenuItem
             // 
             this.addPlayerToolStripMenuItem.Name = "addPlayerToolStripMenuItem";
-            this.addPlayerToolStripMenuItem.Size = new System.Drawing.Size(172, 34);
+            this.addPlayerToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.addPlayerToolStripMenuItem.Text = "Add";
             this.addPlayerToolStripMenuItem.Click += new System.EventHandler(this.addPlayerToolStripMenuItem_Click);
             // 
             // updateToolStripMenuItem
             // 
             this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
-            this.updateToolStripMenuItem.Size = new System.Drawing.Size(172, 34);
+            this.updateToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.updateToolStripMenuItem.Text = "Update";
             this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(55, 29);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(38, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // dgv_player
             // 
             this.dgv_player.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_player.Location = new System.Drawing.Point(14, 75);
-            this.dgv_player.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dgv_player.Location = new System.Drawing.Point(9, 49);
+            this.dgv_player.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dgv_player.Name = "dgv_player";
             this.dgv_player.ReadOnly = true;
             this.dgv_player.RowHeadersWidth = 51;
             this.dgv_player.RowTemplate.Height = 24;
-            this.dgv_player.Size = new System.Drawing.Size(1148, 624);
+            this.dgv_player.Size = new System.Drawing.Size(765, 406);
             this.dgv_player.TabIndex = 1;
             // 
             // cBoxPlayerName
             // 
             this.cBoxPlayerName.FormattingEnabled = true;
-            this.cBoxPlayerName.Location = new System.Drawing.Point(134, 39);
-            this.cBoxPlayerName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cBoxPlayerName.Location = new System.Drawing.Point(89, 25);
+            this.cBoxPlayerName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.cBoxPlayerName.Name = "cBoxPlayerName";
-            this.cBoxPlayerName.Size = new System.Drawing.Size(623, 28);
+            this.cBoxPlayerName.Size = new System.Drawing.Size(417, 21);
             this.cBoxPlayerName.TabIndex = 2;
             this.cBoxPlayerName.SelectedIndexChanged += new System.EventHandler(this.cBoxPlayerName_SelectedIndexChanged);
             // 
             // lblSearch
             // 
             this.lblSearch.AutoSize = true;
-            this.lblSearch.Location = new System.Drawing.Point(12, 42);
+            this.lblSearch.Location = new System.Drawing.Point(8, 27);
+            this.lblSearch.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSearch.Name = "lblSearch";
-            this.lblSearch.Size = new System.Drawing.Size(116, 20);
+            this.lblSearch.Size = new System.Drawing.Size(80, 13);
             this.lblSearch.TabIndex = 3;
             this.lblSearch.Text = "Search Team : ";
             // 
             // Player
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::NBA.Properties.Resources.Untitled_design__2_;
+            this.BackgroundImage = global::NBA.Properties.Resources.bgnba;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1174, 714);
+            this.ClientSize = new System.Drawing.Size(783, 464);
             this.Controls.Add(this.lblSearch);
             this.Controls.Add(this.cBoxPlayerName);
             this.Controls.Add(this.dgv_player);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Name = "Player";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Player";

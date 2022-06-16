@@ -52,9 +52,10 @@
             // 
             this.lblPID.AutoSize = true;
             this.lblPID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPID.Location = new System.Drawing.Point(86, 75);
+            this.lblPID.Location = new System.Drawing.Point(64, 61);
+            this.lblPID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPID.Name = "lblPID";
-            this.lblPID.Size = new System.Drawing.Size(116, 29);
+            this.lblPID.Size = new System.Drawing.Size(89, 24);
             this.lblPID.TabIndex = 0;
             this.lblPID.Text = "Player ID ";
             // 
@@ -65,8 +66,8 @@
             this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1044, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(783, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -75,7 +76,7 @@
             this.exitToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(47, 24);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -83,9 +84,10 @@
             // 
             this.lblTID.AutoSize = true;
             this.lblTID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTID.Location = new System.Drawing.Point(86, 148);
+            this.lblTID.Location = new System.Drawing.Point(64, 120);
+            this.lblTID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTID.Name = "lblTID";
-            this.lblTID.Size = new System.Drawing.Size(76, 29);
+            this.lblTID.Size = new System.Drawing.Size(59, 24);
             this.lblTID.TabIndex = 2;
             this.lblTID.Text = "Team";
             // 
@@ -93,9 +95,10 @@
             // 
             this.lblPName.AutoSize = true;
             this.lblPName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPName.Location = new System.Drawing.Point(86, 220);
+            this.lblPName.Location = new System.Drawing.Point(64, 179);
+            this.lblPName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPName.Name = "lblPName";
-            this.lblPName.Size = new System.Drawing.Size(158, 29);
+            this.lblPName.Size = new System.Drawing.Size(123, 24);
             this.lblPName.TabIndex = 3;
             this.lblPName.Text = "Player Name ";
             // 
@@ -103,9 +106,10 @@
             // 
             this.lblPosition.AutoSize = true;
             this.lblPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPosition.Location = new System.Drawing.Point(86, 294);
+            this.lblPosition.Location = new System.Drawing.Point(64, 239);
+            this.lblPosition.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPosition.Name = "lblPosition";
-            this.lblPosition.Size = new System.Drawing.Size(100, 29);
+            this.lblPosition.Size = new System.Drawing.Size(76, 24);
             this.lblPosition.TabIndex = 4;
             this.lblPosition.Text = "Position";
             // 
@@ -113,44 +117,45 @@
             // 
             this.lblUmur.AutoSize = true;
             this.lblUmur.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUmur.Location = new System.Drawing.Point(86, 362);
+            this.lblUmur.Location = new System.Drawing.Point(64, 294);
+            this.lblUmur.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUmur.Name = "lblUmur";
-            this.lblUmur.Size = new System.Drawing.Size(56, 29);
+            this.lblUmur.Size = new System.Drawing.Size(45, 24);
             this.lblUmur.TabIndex = 5;
             this.lblUmur.Text = "Age";
             // 
             // txtBoxPlayerID
             // 
-            this.txtBoxPlayerID.Location = new System.Drawing.Point(318, 79);
-            this.txtBoxPlayerID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBoxPlayerID.Location = new System.Drawing.Point(238, 64);
+            this.txtBoxPlayerID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtBoxPlayerID.MaxLength = 9;
             this.txtBoxPlayerID.Name = "txtBoxPlayerID";
-            this.txtBoxPlayerID.Size = new System.Drawing.Size(251, 22);
+            this.txtBoxPlayerID.Size = new System.Drawing.Size(189, 20);
             this.txtBoxPlayerID.TabIndex = 6;
             // 
             // txtBoxPlayerName
             // 
-            this.txtBoxPlayerName.Location = new System.Drawing.Point(318, 220);
-            this.txtBoxPlayerName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBoxPlayerName.Location = new System.Drawing.Point(238, 179);
+            this.txtBoxPlayerName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtBoxPlayerName.Name = "txtBoxPlayerName";
-            this.txtBoxPlayerName.Size = new System.Drawing.Size(412, 22);
+            this.txtBoxPlayerName.Size = new System.Drawing.Size(310, 20);
             this.txtBoxPlayerName.TabIndex = 8;
             // 
             // txtBoxPOS
             // 
-            this.txtBoxPOS.Location = new System.Drawing.Point(318, 294);
-            this.txtBoxPOS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBoxPOS.Location = new System.Drawing.Point(238, 239);
+            this.txtBoxPOS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtBoxPOS.MaxLength = 3;
             this.txtBoxPOS.Name = "txtBoxPOS";
-            this.txtBoxPOS.Size = new System.Drawing.Size(107, 22);
+            this.txtBoxPOS.Size = new System.Drawing.Size(81, 20);
             this.txtBoxPOS.TabIndex = 9;
             // 
             // numUpDownAge
             // 
-            this.numUpDownAge.Location = new System.Drawing.Point(318, 366);
-            this.numUpDownAge.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.numUpDownAge.Location = new System.Drawing.Point(238, 297);
+            this.numUpDownAge.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numUpDownAge.Name = "numUpDownAge";
-            this.numUpDownAge.Size = new System.Drawing.Size(107, 22);
+            this.numUpDownAge.Size = new System.Drawing.Size(80, 20);
             this.numUpDownAge.TabIndex = 10;
             this.numUpDownAge.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -159,10 +164,10 @@
             this.btnCancel.BackColor = System.Drawing.Color.Red;
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCancel.Location = new System.Drawing.Point(753, 485);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCancel.Location = new System.Drawing.Point(565, 394);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(123, 48);
+            this.btnCancel.Size = new System.Drawing.Size(92, 39);
             this.btnCancel.TabIndex = 11;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -171,10 +176,10 @@
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.Lime;
-            this.btnSave.Location = new System.Drawing.Point(881, 485);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSave.Location = new System.Drawing.Point(661, 394);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(123, 48);
+            this.btnSave.Size = new System.Drawing.Size(92, 39);
             this.btnSave.TabIndex = 12;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -183,27 +188,29 @@
             // cBoxTeamID
             // 
             this.cBoxTeamID.FormattingEnabled = true;
-            this.cBoxTeamID.Location = new System.Drawing.Point(318, 148);
-            this.cBoxTeamID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cBoxTeamID.Location = new System.Drawing.Point(238, 120);
+            this.cBoxTeamID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cBoxTeamID.Name = "cBoxTeamID";
-            this.cBoxTeamID.Size = new System.Drawing.Size(251, 24);
+            this.cBoxTeamID.Size = new System.Drawing.Size(189, 21);
             this.cBoxTeamID.TabIndex = 13;
             // 
             // pBox_logoNBA
             // 
             this.pBox_logoNBA.Image = global::NBA.Properties.Resources.NBA_75th_anniversary_logo_removebg_preview__1___2_;
-            this.pBox_logoNBA.Location = new System.Drawing.Point(944, 34);
+            this.pBox_logoNBA.Location = new System.Drawing.Point(708, 28);
+            this.pBox_logoNBA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pBox_logoNBA.Name = "pBox_logoNBA";
-            this.pBox_logoNBA.Size = new System.Drawing.Size(100, 70);
+            this.pBox_logoNBA.Size = new System.Drawing.Size(75, 57);
             this.pBox_logoNBA.TabIndex = 18;
             this.pBox_logoNBA.TabStop = false;
             // 
             // AddPlayer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::NBA.Properties.Resources.Untitled_design__2_;
-            this.ClientSize = new System.Drawing.Size(1044, 571);
+            this.BackgroundImage = global::NBA.Properties.Resources.bgnba;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(783, 464);
             this.Controls.Add(this.pBox_logoNBA);
             this.Controls.Add(this.cBoxTeamID);
             this.Controls.Add(this.btnSave);
@@ -218,8 +225,9 @@
             this.Controls.Add(this.lblTID);
             this.Controls.Add(this.lblPID);
             this.Controls.Add(this.menuStrip1);
+            this.DoubleBuffered = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AddPlayer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Player";
