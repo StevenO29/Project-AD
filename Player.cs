@@ -61,6 +61,7 @@ namespace NBA
             sqlAdapter = new MySqlDataAdapter(sqlCommand);
             sqlAdapter.Fill(player);
             dgv_player.DataSource = player;
+            dgv_player.RowHeadersVisible = false;
         }
 
         private void Player_Load(object sender, EventArgs e)
