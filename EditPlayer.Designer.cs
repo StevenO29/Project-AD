@@ -36,12 +36,12 @@
             this.lblPosition = new System.Windows.Forms.Label();
             this.lblUmur = new System.Windows.Forms.Label();
             this.txtBoxPlayerID = new System.Windows.Forms.TextBox();
-            this.txtBoxTeamID = new System.Windows.Forms.TextBox();
             this.txtBoxPlayerName = new System.Windows.Forms.TextBox();
             this.txtBoxPOS = new System.Windows.Forms.TextBox();
             this.numUpDownAge = new System.Windows.Forms.NumericUpDown();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
+            this.cBoxTeamID = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numUpDownAge)).BeginInit();
             this.SuspendLayout();
@@ -64,7 +64,7 @@
             this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1174, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1174, 36);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -73,7 +73,7 @@
             this.exitToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(55, 29);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(55, 32);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -83,9 +83,9 @@
             this.lblTID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTID.Location = new System.Drawing.Point(97, 185);
             this.lblTID.Name = "lblTID";
-            this.lblTID.Size = new System.Drawing.Size(120, 32);
+            this.lblTID.Size = new System.Drawing.Size(86, 32);
             this.lblTID.TabIndex = 2;
-            this.lblTID.Text = "Team ID";
+            this.lblTID.Text = "Team";
             // 
             // lblPName
             // 
@@ -122,16 +122,8 @@
             this.txtBoxPlayerID.Location = new System.Drawing.Point(358, 99);
             this.txtBoxPlayerID.MaxLength = 9;
             this.txtBoxPlayerID.Name = "txtBoxPlayerID";
-            this.txtBoxPlayerID.Size = new System.Drawing.Size(226, 26);
+            this.txtBoxPlayerID.Size = new System.Drawing.Size(282, 26);
             this.txtBoxPlayerID.TabIndex = 6;
-            // 
-            // txtBoxTeamID
-            // 
-            this.txtBoxTeamID.Location = new System.Drawing.Point(358, 191);
-            this.txtBoxTeamID.MaxLength = 3;
-            this.txtBoxTeamID.Name = "txtBoxTeamID";
-            this.txtBoxTeamID.Size = new System.Drawing.Size(226, 26);
-            this.txtBoxTeamID.TabIndex = 7;
             // 
             // txtBoxPlayerName
             // 
@@ -180,17 +172,25 @@
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // cBoxTeamID
+            // 
+            this.cBoxTeamID.FormattingEnabled = true;
+            this.cBoxTeamID.Location = new System.Drawing.Point(358, 185);
+            this.cBoxTeamID.Name = "cBoxTeamID";
+            this.cBoxTeamID.Size = new System.Drawing.Size(282, 28);
+            this.cBoxTeamID.TabIndex = 13;
+            // 
             // AddPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1174, 714);
+            this.Controls.Add(this.cBoxTeamID);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.numUpDownAge);
             this.Controls.Add(this.txtBoxPOS);
             this.Controls.Add(this.txtBoxPlayerName);
-            this.Controls.Add(this.txtBoxTeamID);
             this.Controls.Add(this.txtBoxPlayerID);
             this.Controls.Add(this.lblUmur);
             this.Controls.Add(this.lblPosition);
@@ -221,11 +221,11 @@
         private System.Windows.Forms.Label lblPosition;
         private System.Windows.Forms.Label lblUmur;
         private System.Windows.Forms.TextBox txtBoxPlayerID;
-        private System.Windows.Forms.TextBox txtBoxTeamID;
         private System.Windows.Forms.TextBox txtBoxPlayerName;
         private System.Windows.Forms.TextBox txtBoxPOS;
         private System.Windows.Forms.NumericUpDown numUpDownAge;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.ComboBox cBoxTeamID;
     }
 }

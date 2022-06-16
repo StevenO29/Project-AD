@@ -24,6 +24,8 @@ namespace NBA
         public MySqlDataAdapter sqlAdapter; //Sebagai menampung hasil query
         public string sqlQuery; //Sebagai penampung query SQL
 
+        DataTable teamName = new DataTable();
+
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.Exit();
@@ -40,7 +42,7 @@ namespace NBA
         {
             try
             {
-                sqlQuery = "insert into player (PLAYER_ID, TEAM_ID, PLAYER_NAME, POS, AGE) values ('" + txtBoxPlayerID.Text + "', '" + txtBoxTeamID.Text + "', '" + txtBoxPlayerName.Text + "', '" + txtBoxPOS.Text + "', '" + numUpDownAge.Value.ToString() + "')";
+                sqlQuery = "insert into player (PLAYER_ID, TEAM_ID, PLAYER_NAME, POS, AGE) values ('" + txtBoxPlayerID.Text + "', '" + cBoxTeamID.SelectedValue.ToString() + "', '" + txtBoxPlayerName.Text + "', '" + txtBoxPOS.Text + "', '" + numUpDownAge.Value.ToString() + "')";
                 sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
                 sqlCommand.ExecuteNonQuery();
                 MessageBox.Show("Data Player bernama " + txtBoxPlayerName.Text + " berhasil diinput!");
@@ -57,6 +59,13 @@ namespace NBA
         private void AddPlayer_Load(object sender, EventArgs e)
         {
             sqlConnect.Open();
+            sqlQuery = "select t.Team_Name as `Team Name`, t.Team_id as `Team ID` from team t";
+            sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+            sqlAdapter = new MySqlDataAdapter(sqlCommand);
+            sqlAdapter.Fill(teamName);
+            cBoxTeamID.DataSource = teamName;
+            cBoxTeamID.DisplayMember = "Team Name";
+            cBoxTeamID.ValueMember = "Team ID";
         }
     }
 }
