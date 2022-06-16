@@ -45,11 +45,13 @@
             this.btnNext = new System.Windows.Forms.Button();
             this.btnPrev = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.picBoxAway = new System.Windows.Forms.PictureBox();
-            this.pbox_home = new System.Windows.Forms.PictureBox();
             this.lbStad = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pBox_logonba = new System.Windows.Forms.PictureBox();
+            this.picBoxAway = new System.Windows.Forms.PictureBox();
+            this.pbox_home = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox_logonba)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxAway)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbox_home)).BeginInit();
             this.SuspendLayout();
@@ -214,33 +216,13 @@
             // btnSearch
             // 
             this.btnSearch.Location = new System.Drawing.Point(691, 55);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(100, 28);
             this.btnSearch.TabIndex = 15;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
-            // picBoxAway
-            // 
-            this.picBoxAway.Location = new System.Drawing.Point(736, 186);
-            this.picBoxAway.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.picBoxAway.Name = "picBoxAway";
-            this.picBoxAway.Size = new System.Drawing.Size(200, 185);
-            this.picBoxAway.TabIndex = 9;
-            this.picBoxAway.TabStop = false;
-            // 
-            // pbox_home
-            // 
-            this.pbox_home.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbox_home.InitialImage = null;
-            this.pbox_home.Location = new System.Drawing.Point(110, 186);
-            this.pbox_home.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pbox_home.Name = "pbox_home";
-            this.pbox_home.Size = new System.Drawing.Size(200, 185);
-            this.pbox_home.TabIndex = 4;
-            this.pbox_home.TabStop = false;
             // 
             // lbStad
             // 
@@ -265,12 +247,42 @@
             this.label1.TabIndex = 17;
             this.label1.Text = "Stadium";
             // 
+            // pBox_logonba
+            // 
+            this.pBox_logonba.Image = global::NBA.Properties.Resources.NBA_75th_anniversary_logo_removebg_preview__1___1_;
+            this.pBox_logonba.Location = new System.Drawing.Point(929, 31);
+            this.pBox_logonba.Name = "pBox_logonba";
+            this.pBox_logonba.Size = new System.Drawing.Size(103, 67);
+            this.pBox_logonba.TabIndex = 18;
+            this.pBox_logonba.TabStop = false;
+            // 
+            // picBoxAway
+            // 
+            this.picBoxAway.Location = new System.Drawing.Point(736, 186);
+            this.picBoxAway.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.picBoxAway.Name = "picBoxAway";
+            this.picBoxAway.Size = new System.Drawing.Size(200, 185);
+            this.picBoxAway.TabIndex = 9;
+            this.picBoxAway.TabStop = false;
+            // 
+            // pbox_home
+            // 
+            this.pbox_home.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pbox_home.InitialImage = null;
+            this.pbox_home.Location = new System.Drawing.Point(110, 186);
+            this.pbox_home.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pbox_home.Name = "pbox_home";
+            this.pbox_home.Size = new System.Drawing.Size(200, 185);
+            this.pbox_home.TabIndex = 4;
+            this.pbox_home.TabStop = false;
+            // 
             // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(1044, 571);
+            this.Controls.Add(this.pBox_logonba);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbStad);
             this.Controls.Add(this.btnSearch);
@@ -294,6 +306,7 @@
             this.Load += new System.EventHandler(this.Game_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox_logonba)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxAway)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbox_home)).EndInit();
             this.ResumeLayout(false);
@@ -324,5 +337,6 @@
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Label lbStad;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pBox_logonba;
     }
 }

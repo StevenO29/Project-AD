@@ -52,10 +52,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.chbAllData = new System.Windows.Forms.CheckBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.gbSelect.SuspendLayout();
             this.gbUpdate.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -84,7 +86,7 @@
             this.cbTeamS.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTeamS.FormattingEnabled = true;
             this.cbTeamS.Location = new System.Drawing.Point(194, 39);
-            this.cbTeamS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbTeamS.Margin = new System.Windows.Forms.Padding(4);
             this.cbTeamS.Name = "cbTeamS";
             this.cbTeamS.Size = new System.Drawing.Size(503, 38);
             this.cbTeamS.TabIndex = 1;
@@ -118,7 +120,7 @@
             this.cbPlayerS.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbPlayerS.FormattingEnabled = true;
             this.cbPlayerS.Location = new System.Drawing.Point(194, 110);
-            this.cbPlayerS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbPlayerS.Margin = new System.Windows.Forms.Padding(4);
             this.cbPlayerS.Name = "cbPlayerS";
             this.cbPlayerS.Size = new System.Drawing.Size(338, 38);
             this.cbPlayerS.TabIndex = 4;
@@ -144,9 +146,9 @@
             this.gbSelect.Controls.Add(this.cbTeamS);
             this.gbSelect.Controls.Add(this.lbTeam);
             this.gbSelect.Location = new System.Drawing.Point(16, 57);
-            this.gbSelect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbSelect.Margin = new System.Windows.Forms.Padding(4);
             this.gbSelect.Name = "gbSelect";
-            this.gbSelect.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbSelect.Padding = new System.Windows.Forms.Padding(4);
             this.gbSelect.Size = new System.Drawing.Size(776, 172);
             this.gbSelect.TabIndex = 7;
             this.gbSelect.TabStop = false;
@@ -155,7 +157,7 @@
             // btnDet
             // 
             this.btnDet.Location = new System.Drawing.Point(597, 118);
-            this.btnDet.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDet.Margin = new System.Windows.Forms.Padding(4);
             this.btnDet.Name = "btnDet";
             this.btnDet.Size = new System.Drawing.Size(100, 28);
             this.btnDet.TabIndex = 6;
@@ -177,9 +179,9 @@
             this.gbUpdate.Controls.Add(this.label4);
             this.gbUpdate.Controls.Add(this.label3);
             this.gbUpdate.Location = new System.Drawing.Point(16, 267);
-            this.gbUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.gbUpdate.Name = "gbUpdate";
-            this.gbUpdate.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbUpdate.Padding = new System.Windows.Forms.Padding(4);
             this.gbUpdate.Size = new System.Drawing.Size(972, 316);
             this.gbUpdate.TabIndex = 8;
             this.gbUpdate.TabStop = false;
@@ -191,7 +193,7 @@
             this.btnDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDel.ForeColor = System.Drawing.SystemColors.Control;
             this.btnDel.Location = new System.Drawing.Point(706, 251);
-            this.btnDel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDel.Margin = new System.Windows.Forms.Padding(4);
             this.btnDel.Name = "btnDel";
             this.btnDel.Size = new System.Drawing.Size(100, 28);
             this.btnDel.TabIndex = 10;
@@ -203,7 +205,7 @@
             // 
             this.btnUpdate.BackColor = System.Drawing.Color.Lime;
             this.btnUpdate.Location = new System.Drawing.Point(597, 251);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(100, 28);
             this.btnUpdate.TabIndex = 7;
@@ -228,7 +230,7 @@
             this.cbPosU.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbPosU.FormattingEnabled = true;
             this.cbPosU.Location = new System.Drawing.Point(180, 174);
-            this.cbPosU.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbPosU.Margin = new System.Windows.Forms.Padding(4);
             this.cbPosU.Name = "cbPosU";
             this.cbPosU.Size = new System.Drawing.Size(135, 38);
             this.cbPosU.TabIndex = 8;
@@ -238,7 +240,7 @@
             this.cbTeamU.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTeamU.FormattingEnabled = true;
             this.cbTeamU.Location = new System.Drawing.Point(180, 132);
-            this.cbTeamU.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbTeamU.Margin = new System.Windows.Forms.Padding(4);
             this.cbTeamU.Name = "cbTeamU";
             this.cbTeamU.Size = new System.Drawing.Size(338, 38);
             this.cbTeamU.TabIndex = 7;
@@ -247,7 +249,7 @@
             // 
             this.tbNameU.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbNameU.Location = new System.Drawing.Point(180, 89);
-            this.tbNameU.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbNameU.Margin = new System.Windows.Forms.Padding(4);
             this.tbNameU.Name = "tbNameU";
             this.tbNameU.Size = new System.Drawing.Size(488, 37);
             this.tbNameU.TabIndex = 5;
@@ -256,7 +258,7 @@
             // 
             this.tbID.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbID.Location = new System.Drawing.Point(180, 46);
-            this.tbID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbID.Margin = new System.Windows.Forms.Padding(4);
             this.tbID.Name = "tbID";
             this.tbID.Size = new System.Drawing.Size(199, 37);
             this.tbID.TabIndex = 4;
@@ -311,7 +313,7 @@
             this.chbAllData.AutoSize = true;
             this.chbAllData.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chbAllData.Location = new System.Drawing.Point(835, 133);
-            this.chbAllData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbAllData.Margin = new System.Windows.Forms.Padding(4);
             this.chbAllData.Name = "chbAllData";
             this.chbAllData.Size = new System.Drawing.Size(131, 35);
             this.chbAllData.TabIndex = 9;
@@ -319,12 +321,22 @@
             this.chbAllData.UseVisualStyleBackColor = true;
             this.chbAllData.CheckedChanged += new System.EventHandler(this.chbAllData_CheckedChanged);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::NBA.Properties.Resources.NBA_75th_anniversary_logo_removebg_preview__1___1_;
+            this.pictureBox1.Location = new System.Drawing.Point(946, 43);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(107, 65);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
             // UpdatePlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(1065, 619);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.chbAllData);
             this.Controls.Add(this.gbUpdate);
             this.Controls.Add(this.label1);
@@ -332,7 +344,7 @@
             this.Controls.Add(this.gbSelect);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UpdatePlayer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UpdatePlayer";
@@ -344,6 +356,7 @@
             this.gbSelect.PerformLayout();
             this.gbUpdate.ResumeLayout(false);
             this.gbUpdate.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -374,5 +387,6 @@
         private System.Windows.Forms.Button btnDel;
         private System.Windows.Forms.CheckBox chbAllData;
         private System.Windows.Forms.ToolStripMenuItem backToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

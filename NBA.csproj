@@ -255,5 +255,17 @@
   <ItemGroup>
     <None Include="Resources\WAS.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NBA-75th-anniversary-logo-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NBA-75th-anniversary-logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NBA-75th-anniversary-logo-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NBA-75th-anniversary-logo-removebg-preview %281%29 %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

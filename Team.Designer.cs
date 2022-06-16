@@ -51,11 +51,13 @@
             this.lbCity = new System.Windows.Forms.Label();
             this.lbName = new System.Windows.Forms.Label();
             this.pictBoxLogo = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTeam)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStadium)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictBoxLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -214,7 +216,7 @@
             this.dgvPlayer.AllowUserToAddRows = false;
             this.dgvPlayer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPlayer.Location = new System.Drawing.Point(18, 75);
-            this.dgvPlayer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvPlayer.Margin = new System.Windows.Forms.Padding(4);
             this.dgvPlayer.Name = "dgvPlayer";
             this.dgvPlayer.RowHeadersWidth = 62;
             this.dgvPlayer.Size = new System.Drawing.Size(537, 482);
@@ -291,12 +293,22 @@
             this.pictBoxLogo.TabStop = false;
             this.pictBoxLogo.Visible = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::NBA.Properties.Resources.NBA_75th_anniversary_logo_removebg_preview__1___1_;
+            this.pictureBox1.Location = new System.Drawing.Point(936, 31);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(108, 65);
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
+            // 
             // Team
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Crimson;
             this.ClientSize = new System.Drawing.Size(1044, 571);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lbCap);
             this.Controls.Add(this.lbCity);
             this.Controls.Add(this.lbName);
@@ -324,6 +336,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvStadium)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlayer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictBoxLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -354,5 +367,6 @@
         private System.Windows.Forms.Label lbCity;
         private System.Windows.Forms.Label lbName;
         private System.Windows.Forms.ToolStripMenuItem teamToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

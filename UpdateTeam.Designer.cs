@@ -45,7 +45,9 @@
             this.backToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSearch = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lb1
@@ -96,7 +98,7 @@
             // 
             this.tbTeamID.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbTeamID.Location = new System.Drawing.Point(365, 210);
-            this.tbTeamID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbTeamID.Margin = new System.Windows.Forms.Padding(4);
             this.tbTeamID.Name = "tbTeamID";
             this.tbTeamID.Size = new System.Drawing.Size(89, 37);
             this.tbTeamID.TabIndex = 5;
@@ -106,7 +108,7 @@
             // 
             this.tbTeamName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbTeamName.Location = new System.Drawing.Point(365, 254);
-            this.tbTeamName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbTeamName.Margin = new System.Windows.Forms.Padding(4);
             this.tbTeamName.Name = "tbTeamName";
             this.tbTeamName.Size = new System.Drawing.Size(416, 37);
             this.tbTeamName.TabIndex = 6;
@@ -116,7 +118,7 @@
             this.cbStad.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbStad.FormattingEnabled = true;
             this.cbStad.Location = new System.Drawing.Point(365, 308);
-            this.cbStad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbStad.Margin = new System.Windows.Forms.Padding(4);
             this.cbStad.Name = "cbStad";
             this.cbStad.Size = new System.Drawing.Size(416, 38);
             this.cbStad.TabIndex = 7;
@@ -125,7 +127,7 @@
             // 
             this.tbCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbCity.Location = new System.Drawing.Point(365, 357);
-            this.tbCity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbCity.Margin = new System.Windows.Forms.Padding(4);
             this.tbCity.Name = "tbCity";
             this.tbCity.Size = new System.Drawing.Size(416, 37);
             this.tbCity.TabIndex = 8;
@@ -146,7 +148,7 @@
             this.cbTeam.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTeam.FormattingEnabled = true;
             this.cbTeam.Location = new System.Drawing.Point(98, 85);
-            this.cbTeam.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbTeam.Margin = new System.Windows.Forms.Padding(4);
             this.cbTeam.Name = "cbTeam";
             this.cbTeam.Size = new System.Drawing.Size(358, 54);
             this.cbTeam.TabIndex = 10;
@@ -156,7 +158,7 @@
             this.btnSave.BackColor = System.Drawing.Color.Lime;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Location = new System.Drawing.Point(760, 474);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(119, 41);
             this.btnSave.TabIndex = 11;
@@ -170,7 +172,7 @@
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnDelete.Location = new System.Drawing.Point(887, 474);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(137, 41);
             this.btnDelete.TabIndex = 12;
@@ -184,7 +186,7 @@
             this.chbDel.AutoSize = true;
             this.chbDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chbDel.Location = new System.Drawing.Point(98, 455);
-            this.chbDel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chbDel.Margin = new System.Windows.Forms.Padding(4);
             this.chbDel.Name = "chbDel";
             this.chbDel.Size = new System.Drawing.Size(126, 35);
             this.chbDel.TabIndex = 13;
@@ -217,7 +219,7 @@
             // 
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.Location = new System.Drawing.Point(492, 94);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(123, 41);
             this.btnSearch.TabIndex = 15;
@@ -236,12 +238,22 @@
             this.label1.TabIndex = 16;
             this.label1.Text = "Update Team";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::NBA.Properties.Resources.NBA_75th_anniversary_logo_removebg_preview__1___1_;
+            this.pictureBox1.Location = new System.Drawing.Point(923, 43);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(130, 72);
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
+            // 
             // UpdateTeam
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Crimson;
             this.ClientSize = new System.Drawing.Size(1065, 619);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.chbDel);
@@ -260,13 +272,14 @@
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UpdateTeam";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UpdateTeam";
             this.Load += new System.EventHandler(this.UpdateTeam_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -290,5 +303,6 @@
         private System.Windows.Forms.ToolStripMenuItem backToolStripMenuItem;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
