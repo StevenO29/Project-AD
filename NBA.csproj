@@ -264,5 +264,8 @@
   <ItemGroup>
     <None Include="Resources\bgnba1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nba-basketball-logo-wallpaper.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

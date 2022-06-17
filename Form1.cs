@@ -20,8 +20,6 @@ namespace NBA
         private void timerLoad_Tick(object sender, EventArgs e)
         {
             progBarLoadScreen.Value = progBarLoadScreen.Value + 1;
-            if (progBarLoadScreen.Value >= 30)
-                timerLoad.Enabled = false;
             if (progBarLoadScreen.Value == 30)
             {
                 timerLoad.Enabled = false;
