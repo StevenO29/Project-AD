@@ -303,6 +303,16 @@ namespace NBA.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap nba_basketball_logo_wallpaper {
+            get {
+                object obj = ResourceManager.GetObject("nba-basketball-logo-wallpaper", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap NOP {
             get {
                 object obj = ResourceManager.GetObject("NOP", resourceCulture);

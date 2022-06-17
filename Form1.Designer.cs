@@ -29,32 +29,19 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoadingPage));
-            this.pictBoxLogo = new System.Windows.Forms.PictureBox();
             this.progBarLoadScreen = new System.Windows.Forms.ProgressBar();
             this.timerLoad = new System.Windows.Forms.Timer(this.components);
+            this.pictBoxLogo = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictBoxLogo)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictBoxLogo
-            // 
-            this.pictBoxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pictBoxLogo.Image")));
-            this.pictBoxLogo.Location = new System.Drawing.Point(-6, -2);
-            this.pictBoxLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pictBoxLogo.Name = "pictBoxLogo";
-            this.pictBoxLogo.Size = new System.Drawing.Size(791, 455);
-            this.pictBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictBoxLogo.TabIndex = 0;
-            this.pictBoxLogo.TabStop = false;
-            // 
             // progBarLoadScreen
             // 
-            this.progBarLoadScreen.Location = new System.Drawing.Point(0, 452);
-            this.progBarLoadScreen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.progBarLoadScreen.Location = new System.Drawing.Point(0, 695);
             this.progBarLoadScreen.MarqueeAnimationSpeed = 30;
             this.progBarLoadScreen.Maximum = 30;
             this.progBarLoadScreen.Name = "progBarLoadScreen";
-            this.progBarLoadScreen.Size = new System.Drawing.Size(785, 29);
+            this.progBarLoadScreen.Size = new System.Drawing.Size(1178, 45);
             this.progBarLoadScreen.TabIndex = 1;
             // 
             // timerLoad
@@ -62,14 +49,24 @@
             this.timerLoad.Enabled = true;
             this.timerLoad.Tick += new System.EventHandler(this.timerLoad_Tick);
             // 
+            // pictBoxLogo
+            // 
+            this.pictBoxLogo.BackgroundImage = global::NBA.Properties.Resources.nba_basketball_logo_wallpaper;
+            this.pictBoxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictBoxLogo.Location = new System.Drawing.Point(-9, -3);
+            this.pictBoxLogo.Name = "pictBoxLogo";
+            this.pictBoxLogo.Size = new System.Drawing.Size(1186, 700);
+            this.pictBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictBoxLogo.TabIndex = 0;
+            this.pictBoxLogo.TabStop = false;
+            // 
             // LoadingPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(783, 481);
+            this.ClientSize = new System.Drawing.Size(1174, 740);
             this.Controls.Add(this.progBarLoadScreen);
             this.Controls.Add(this.pictBoxLogo);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "LoadingPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NBA\'s Data";
